@@ -1,0 +1,802 @@
+{
+  "admins" : {
+    "dSxgpLXr8FZbDOOfHIJ2wVWQoEH3" : true,
+    "p4XaFNyX2bQCnBrcMq3trf2IOrq2" : true
+  },
+  "pages" : {
+    "about" : {
+      "content" : "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>",
+      "title" : "About Us"
+    },
+    "benefits" : {
+      "content" : "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>",
+      "title" : "Benefits"
+    },
+    "home" : {
+      "content" : "<p>Supply Chain Asia is a not-for-profit professional body that aims to bring professionals from within the logistics and supply chain industry together to share knowledge, learn from one another and create opportunities for collaborations.</p>\n<p>The three main focus of SCA are connecting people from various sectors of the industry, encouraging communication amongst professionals and creating opportunities for collaborations. The four main pillars of the organisations are memberships, events, academy and publication.</p>\n<p>SCA holds various events annually to provide networking and learning opportunities for the community. The organisation also provides training courses in the area of logistics and SCM, equipping attendees with skills that are applicable to the real working scenarios in the industry. As for membership, SCA aims to develop a close-knit community that continues to better itself by leveraging on SCA’s platform and services.</p>\n<p>SCA has its own bi-monthly print publication – the Supply Chain Asia Magazine – which is also available in digital copy. During non-print months, SCA publishes digiMag Industry Report, aimed at providing professionals in the industry with up-to-date news through fun infographics and images.</p>\n<p><br></p>",
+      "title" : "Welcome to Supply Chain Asia Fellowship"
+    },
+    "qualification" : {
+      "content" : "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>",
+      "title" : "Qualification"
+    }
+  },
+  "questions" : {
+    "-KgXh61Wibo2UkUjWlI8" : {
+      "-KgXlFpqoxjMbMIey8HV" : {
+        "definition" : "A seafreight forwarder or a Non-Vessel Operating Common Carrier (NVOCC) is a company who specialises in organising sea shipments for individuals or businesses to move goods from one country to another country.  Multiple small shipments to the same destination are consolidated and shipped in the same container to the destination port where they are deconsolidated for collection or final delivery to the consignee.   To support the freight forwarding business, the freight forwarder has to coordinate with multiple parties to execute a shipment. These include some of the following:\n\na. Forwarders often have established contracts to work with one or multiple carriers to move the goods where they secured discounted rates on container shipments.\n\nb. They have to secure shipments and plan the loading of goods into each container which is typically carried out in a container freight station that is residing within or outside the port area.\n\nc. They need to work with transporters / shippers to coordinate the collection /delivery of the goods.  \n\nd. They have to work with Government Agencies for customs clearance.  \n\ne. They have to work with the port authority to transport the container into the port for loading unto ships.  \n\nf. They have to work with overseas agents and partners to receive the container and deconsolidate for consignee’s collection or arrange delivery to consignee.  \n\nOn a daily basis, the focus is on the execution of the shipments to meet the customers’ requirements.  At the operational level, the objective is to organise the work flow and improve the coordination so that profits can be maximised without compromising customers’ requirements.   At the strategic level, the focus is to build overseas agencies network where the business can grow.",
+        "id" : "-KgXlFpqoxjMbMIey8HV",
+        "ordering" : 10,
+        "responses" : {
+          "-KgXlG6LLbA-T8jG3aIZ" : {
+            "id" : "-KgXlG6LLbA-T8jG3aIZ",
+            "title" : "Familiar with the standard operating procedures of a seafreight forwarding operations.",
+            "weightage" : 25
+          },
+          "-KgXlGHqKfyLqXV9Hw3v" : {
+            "id" : "-KgXlGHqKfyLqXV9Hw3v",
+            "title" : "Know the operational plan for seafreight forwarding and how it helps to meet customers’ requirements.",
+            "weightage" : 50
+          },
+          "-KgXlGLLn3fDkpZF8zVh" : {
+            "id" : "-KgXlGLLn3fDkpZF8zVh",
+            "title" : "Organise the resources in order to meet customers’ requirements and maximise profits.",
+            "weightage" : 75
+          },
+          "-KgXlGOq-zbr8l-VcfvW" : {
+            "id" : "-KgXlGOq-zbr8l-VcfvW",
+            "title" : "Develop the overseas network by various means (agencies arrangements, partnerships and/or setting up of subsidiaries) in line with the strategic objectives of the seafreight forwarding business.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Based on your work experience, what do you understand as the roles and objectives of a seafreight forwarding operation?"
+      },
+      "-Kghy-iJtgmuw4DMevAw" : {
+        "definition" : "International Commercial Terms (INCOTERMS) are internationally recognised trade terms used in sales and purchase contracts.  It is a 3-letter format which helps to define the responsibilities between buyer and the seller during the transportation of the goods from the buyer to the seller.  This includes who to bear the cost of transporting the goods, insurance, taxes and duties and where is the pickup point and handover point for the goods.   There are different terms used for sea transport and other modes of transport.",
+        "id" : "-Kghy-iJtgmuw4DMevAw",
+        "ordering" : 2,
+        "responses" : {
+          "-Kghy-oRKC2AslGcRlSE" : {
+            "id" : "-Kghy-oRKC2AslGcRlSE",
+            "title" : "Understand the commonly used INCOTERMS (eg. FOB, CIF, Ex-Works, FCA, CIP, etc) used in international trade and know the extent of the responsibility of the various parties.",
+            "weightage" : 25
+          },
+          "-Kghy-oRKC2AslGcRlSF" : {
+            "id" : "-Kghy-oRKC2AslGcRlSF",
+            "title" : "Able to compute the price of the goods, insurance, GST, duties or any other taxes for different INCOTERMS in any given shipment.",
+            "weightage" : 50
+          },
+          "-Kghy-oRKC2AslGcRlSG" : {
+            "id" : "-Kghy-oRKC2AslGcRlSG",
+            "title" : "Able to provide advice to customers, business partners and agents on the use / selection of the INCOTERMS and their implications on import and export prices of the prices.",
+            "weightage" : 75
+          },
+          "-Kghy-oRKC2AslGcRlSH" : {
+            "id" : "-Kghy-oRKC2AslGcRlSH",
+            "title" : "Able to conduct training on INCOTERMS and their applications to an audience.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which of the following statement best describes your knowledge of INCOTERMS used in international trade?"
+      },
+      "-KghyAbyd2BA_du8UhGy" : {
+        "definition" : "As a freight forwarder, it is imperative to have a good knowledge of the transport geography of the world which includes having a thorough knowledge of the major ports and the different trade routes.  The main axis of the shipping configuration is the circum-equatorial corridor that link North America, Europe and Asia Pacific through the Suez Canal, the Straits of Malacca and the Panama Cana.  (The Suez Canal is an important sea link connecting Europe with a direct passage to Asia without going around Cape of Good Hope.  The Panama Canal provides a link between Pacific Ocean and Atlantic Ocean connecting Western USA to Eastern USA without the need to go around South America.)   The major shipping routes around the world include the Far East to Europe route, the Trans-Atlantic route, the Trans-Pacific route and the Far East to Mediterranean route. \n\nFor shipments to USA, carriers can also operate as a mini-landbridge service or an all-water service.  A mini-landbridge service taps on the railway network that spans the USA from coast to coast connecting major ports on east coast to west coast.  An all-water service links the US West Coast and East Coast via the Panama Canal.\n\nMain inland waterways transportation includes the Rhine River, Mississippi River, Yangtze River, Mekong River and so on.",
+        "id" : "-KghyAbyd2BA_du8UhGy",
+        "ordering" : 30,
+        "responses" : {
+          "-KghyBORx3bPncEdFTEd" : {
+            "id" : "-KghyBORx3bPncEdFTEd",
+            "title" : "Know the main trade routes and major ports around the world.",
+            "weightage" : 25
+          },
+          "-KghyBORx3bPncEdFTEe" : {
+            "id" : "-KghyBORx3bPncEdFTEe",
+            "title" : "Know the freight conferences and the protocols with respect to the operations of the main trade routes and major ports around the world.",
+            "weightage" : 50
+          },
+          "-KghyBORx3bPncEdFTEf" : {
+            "id" : "-KghyBORx3bPncEdFTEf",
+            "title" : "Differentiate between the different route alternatives to various destination countries in terms of lead time, cost and security.",
+            "weightage" : 75
+          },
+          "-KghyBORx3bPncEdFTEg" : {
+            "id" : "-KghyBORx3bPncEdFTEg",
+            "title" : "Provide advice on the most cost effective and efficient route to most destination countries in the world given intimate knowledge on the numerous trade routes and regional inland waterways transportation in major continents.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which of the following statement best describes your level of knowledge on route planning in any sea shipment?"
+      },
+      "-KghyPafwAVnBnS8TK9X" : {
+        "definition" : "There are many types of shipping documents that are required for sea shipment.  These include commercial invoice, packing list, seaway bill of lading, house bill of lading, certificate of origin and export permit.  Some of these documents are prepared by the shipper while some are prepared by the freight forwarder who extracts information for their documents based on those provided by the shipper.  The level of expertise in shipping documents preparation increases when it is a LC shipment.  The staff needs experience to interpret the conditions stated in the LC to prepare the documents that comply with these conditions.  Additional shipping documents required in LC shipment could include draft bill of exchange, insurance policy and cover, inspection certificate and so on.   Preparation of shipping documents is a daily routine for operational staff responsible for processing and coordinating shipments on behalf of customers.",
+        "id" : "-KghyPafwAVnBnS8TK9X",
+        "ordering" : 40,
+        "responses" : {
+          "-KghyPxS5lmbxETvRV_v" : {
+            "id" : "-KghyPxS5lmbxETvRV_v",
+            "title" : "Able to prepare standard shipping documents including bill of lading, house bill of lading, permit, packing list and certificate of origin for any given shipment",
+            "weightage" : 25
+          },
+          "-KghyPxS5lmbxETvRV_w" : {
+            "id" : "-KghyPxS5lmbxETvRV_w",
+            "title" : "Able to interpret Letter of Credit (LC) and prepare the shipping documents in compliance with the requirements stated in the LC.",
+            "weightage" : 50
+          },
+          "-KghyPxS5lmbxETvRV_x" : {
+            "id" : "-KghyPxS5lmbxETvRV_x",
+            "title" : "Able to structure processes and controls that allow efficient preparation of shipping documents with minimum errors.",
+            "weightage" : 75
+          },
+          "-KghyPxS5lmbxETvRV_y" : {
+            "id" : "-KghyPxS5lmbxETvRV_y",
+            "title" : "Adopt and implement industry best practices to improve shipping documents preparation and deliver better service to customers.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which of the following statements best describes your expertise in shipping documentation?"
+      },
+      "-KghyXqEA09fgq64w_QQ" : {
+        "definition" : "There are many cost elements in seafreight.   First and foremost, there is the ocean freight rate which varies with destination.  Ocean freight rate for LCL is charged based on the revenue ton which is the weight or volume of the cargo whichever is higher.  Freight rate for FCL is charged based on per container basis depending on the size and type of container used.  Other costs include terminal handling charges, marine insurance cost, packing and palletisation cost, customs clearance, documentation cost, bunker adjustment factor, currency adjustment factor and any other destination charges.  To the shippers, these cost can be quoted as an all-in ocean freight rate or as separate components.    Typically, freight forwarders consolidate small shipments from many customers and ship as a full container to the destination port where they are de-consolidate for delivery to the consignees.  As such, freight forwarders will try to maximise the number of LCL shipments into a single container so that freight revenue per container can be maximised.  The profit to freight forwarder is the difference between the revenue received per container and the discounted FCL container rate that they obtained with ocean carriers.",
+        "id" : "-KghyXqEA09fgq64w_QQ",
+        "ordering" : 50,
+        "responses" : {
+          "-KghyYBWlkOPXhKHRASr" : {
+            "id" : "-KghyYBWlkOPXhKHRASr",
+            "title" : "Understand the cost elements applicable for Less than Container Load (LCL) and Full Container Load (FCL) shipment and able to determine the cost of a typical shipment.",
+            "weightage" : 25
+          },
+          "-KghyYBWlkOPXhKHRASs" : {
+            "id" : "-KghyYBWlkOPXhKHRASs",
+            "title" : "Able to plan and combine multiple LCL shipments into a single container load so that freight revenue per container is maximised.",
+            "weightage" : 50
+          },
+          "-KghyYBWlkOPXhKHRASt" : {
+            "id" : "-KghyYBWlkOPXhKHRASt",
+            "title" : "Manage the overall freight cost of the freight or shipping operation without compromising on the quality service to customers.",
+            "weightage" : 75
+          },
+          "-KghyYBWlkOPXhKHRASu" : {
+            "id" : "-KghyYBWlkOPXhKHRASu",
+            "title" : "Able to impart best practices in freight management to the team or an external audience.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which of the following statements best describe your experience with seafreight costing?"
+      },
+      "-Kgi-GYAi3B-jFLM-i0p" : {
+        "definition" : "Each country has its own set of rules and regulations regarding the movement of goods entering or leaving their borders.  Customs clearance is the act of passing goods through customs so that they can enter or leave a country.   The procedure for this clearance covers the documentation and inspection requirements, methods to determine the goods’ classification and assignment of the goods’ value for the purpose of computation of taxes and duties and payment of taxes and duties.    For example, Singapore adopted the Harmonised System (HS) for goods’ classification which is a multi-purpose product nomenclature developed by World Customs Organisation (WCO) on 1 Jan 1998.  In addition, Singapore implemented the ASEAN Harmonised Tariff Nomenclature (AHTN) on 1 Jan 2003.  \n\nTo facilitate trade and support business requirements, customs in each country can operate a number of trade facilitation and schemes including tax suspension.  In this aspect, freight forwarders are well-placed to provide advice to new businesses and traders intending to import/exports goods in the country.\n\nTypically, any goods entering or leaving a country will require the traders/shippers to submit a permit declaration.  This can also be done by freight forwarders who are appointed as declaring agents acting on behalf of the traders/shippers.",
+        "id" : "-Kgi-GYAi3B-jFLM-i0p",
+        "ordering" : 60,
+        "responses" : {
+          "-Kgi-Hws7jJ-zNjVGm06" : {
+            "id" : "-Kgi-Hws7jJ-zNjVGm06",
+            "title" : "Able to prepare import / export permit via electronic platform or any other means in compliance with customs clearance procedure.",
+            "weightage" : 25
+          },
+          "-Kgi-Hws7jJ-zNjVGm07" : {
+            "id" : "-Kgi-Hws7jJ-zNjVGm07",
+            "title" : "Familiar with the customs process and the application of the various trade facilitation and tax suspension schemes available in the country.",
+            "weightage" : 50
+          },
+          "-Kgi-Hws7jJ-zNjVGm08" : {
+            "id" : "-Kgi-Hws7jJ-zNjVGm08",
+            "title" : "Provide guidance to staff or advice to customers on the compliances required for customs clearance and the best trade facilitation and tax suspension scheme to support a given business scenario.",
+            "weightage" : 75
+          },
+          "-Kgi-HwtMqy-yt9NO5ZD" : {
+            "id" : "-Kgi-HwtMqy-yt9NO5ZD",
+            "title" : "Mitigate any potential risks that may arise from lapses in customs clearance.",
+            "weightage" : 100
+          }
+        },
+        "title" : "What is your experience with customs clearance procedure in the country / countries that you operate in?"
+      },
+      "-Kgi-TUbk_1szWVOAd-U" : {
+        "definition" : "Multimodal transport or combined transport refers to the transportation of goods under a single contract, but executed using at least two different means of transport.   The freight forwarder executing the shipment is liable (in a legal sense) for the entire carriage.",
+        "id" : "-Kgi-TUbk_1szWVOAd-U",
+        "ordering" : 70,
+        "responses" : {
+          "-Kgi-U6sSwaIKW3lYlEF" : {
+            "id" : "-Kgi-U6sSwaIKW3lYlEF",
+            "title" : "Able to plan and execute a sea shipment.",
+            "weightage" : 25
+          },
+          "-Kgi-U6sSwaIKW3lYlEG" : {
+            "id" : "-Kgi-U6sSwaIKW3lYlEG",
+            "title" : "Beside sea shipment, able to plan and execute shipment using another mode of transport eg air shipment, rail shipment or road transportation.",
+            "weightage" : 50
+          },
+          "-Kgi-U6sSwaIKW3lYlEH" : {
+            "id" : "-Kgi-U6sSwaIKW3lYlEH",
+            "title" : "Able to plan and execute a multi-modal shipment regionally.",
+            "weightage" : 75
+          },
+          "-Kgi-U6sSwaIKW3lYlEI" : {
+            "id" : "-Kgi-U6sSwaIKW3lYlEI",
+            "title" : "Able to plan and execute a multi-modal shipment internationally.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which of the following statements best describes your expertise in planning and executing shipment using different modes of transportation?"
+      },
+      "-Kgi-_UJCLM3pSPopMlN" : {
+        "definition" : "Import and export procedure deals with the process or the steps needed to import goods into a country or export goods from a country respectively.   It requires understanding of the customs procedure of the country of origin and destination.  It requires knowledge on how the carriers and transporters function.   It requires understanding on the industry practices on how charges are applied and surcharges imposed by carriers, port authorities and Government agencies.  It requires understanding of the different type of documents required for the shipment.  It requires coordination with the various parties involved in the shipment and clearance process.   Because of the complexity of the operations, traders and manufacturers, especially small businesses, outsource this function to freight forwarders.",
+        "id" : "-Kgi-_UJCLM3pSPopMlN",
+        "ordering" : 80,
+        "responses" : {
+          "-Kgi-_lg_s2vzGFBvSey" : {
+            "id" : "-Kgi-_lg_s2vzGFBvSey",
+            "title" : "Execute, monitor and coordinate with the various parties to facilitate the clearance of goods or export of goods on a daily basis.",
+            "weightage" : 25
+          },
+          "-Kgi-_lhjUCwV2cOYN8b" : {
+            "id" : "-Kgi-_lhjUCwV2cOYN8b",
+            "title" : "Lead a team to resolve daily operational issues and ensure that all goods clearance and export are executed on time according to customers’ requirements and without incurring any penalty.",
+            "weightage" : 50
+          },
+          "-Kgi-_lhjUCwV2cOYN8c" : {
+            "id" : "-Kgi-_lhjUCwV2cOYN8c",
+            "title" : "Organise and review the seafreight process and implement solutions to improve coordination and reduce lead time required for processing of shipments without compromising customers’ requirements.",
+            "weightage" : 75
+          },
+          "-Kgi-_lhjUCwV2cOYN8d" : {
+            "id" : "-Kgi-_lhjUCwV2cOYN8d",
+            "title" : "Leverage on information technology and business relationships to position the seafreight operation for expansion.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which of the following statement best describes your role and expertise with regards to managing of seafreight operations?"
+      },
+      "-Kgi-gTKe_yDGCFR0dqk" : {
+        "definition" : "Dangerous goods refers to materials that can pose significant risk to people, property and environment during transportation.  For sea shipment of dangerous goods, shippers and freight forwarders have to comply the regulations stated in the IMDG code.  Besides providing the classification of some 3000+ hazardous materials into 9 different hazard classes, the IMDG code provides guidelines on how to pack, label and ship the dangerous goods and emergency response action required in the event of an accident or spillage.  For movement of dangerous goods within a country, compliance to the respective countries’ regulation (which vary from country to country) is required.  This may involve the securing of import, storage and transport licences for dangerous goods.",
+        "id" : "-Kgi-gTKe_yDGCFR0dqk",
+        "ordering" : 90,
+        "responses" : {
+          "-Kgi-gncTEImC_UO1dLu" : {
+            "id" : "-Kgi-gncTEImC_UO1dLu",
+            "title" : "Know the international classification of dangerous goods and safety precautions required when handling these dangerous goods.",
+            "weightage" : 25
+          },
+          "-Kgi-gncTEImC_UO1dLv" : {
+            "id" : "-Kgi-gncTEImC_UO1dLv",
+            "title" : "Able to prepare dangerous goods for shipment in compliance with the IMDG Code.",
+            "weightage" : 50
+          },
+          "-Kgi-gncTEImC_UO1dLw" : {
+            "id" : "-Kgi-gncTEImC_UO1dLw",
+            "title" : "Able to interpret the IMDG Code and local regulations, provide advice to customers planning to ship dangerous goods and implement appropriate safety measures for compliance.",
+            "weightage" : 75
+          },
+          "-Kgi-gncTEImC_UO1dLx" : {
+            "id" : "-Kgi-gncTEImC_UO1dLx",
+            "title" : "Secure appropriate licences and develop safety infrastructures to support the business of storage and shipment of dangerous goods.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which one of the following statements best describes your expertise in the storage, handling and transportation/shipment of dangerous goods?"
+      },
+      "-Kgi-nUW2N-cu3JioQrj" : {
+        "definition" : "Most shipments handled by freight forwarders involve cargo that can be palletised and packed into standard shipping containers.  Two levels of expertise are required of staff handling the consolidation and deconsolidation.  First, the ability to organise, stack and secure the cargo onto pallets to protect them from damages.  Second, the ability to plan, load and secure the cargo into a container such that maximum weight/volume of cargo are packed into it without increasing the risk of damages to the cargo. \n\nWhen shipment involves out-of-gauge cargo which cannot be packed into standard containers, it will require high level of expertise from the freight forwarder planning and executing the delivery which will require specialist equipment and shipping methods.  Developing credible door-to-door solutions for customers hinges very much on the experience of the freight forwarder. \n\nIn large scale shipments, it involves multi deliveries planned and executed over a period of time and in accordance with the delivery schedule dictated by customers.  Many of the cargo are mission critical and missing any delivery schedule will have huge consequence and impact on customers.  Hence, it requires careful planning (including developing contingency plans) and close monitoring of the shipments.",
+        "id" : "-Kgi-nUW2N-cu3JioQrj",
+        "ordering" : 100,
+        "responses" : {
+          "-Kgi-nuYVcLSlDwSueRC" : {
+            "id" : "-Kgi-nuYVcLSlDwSueRC",
+            "title" : "Perform stacking and palletisation of cargo to secure and protect the cargo from damage.",
+            "weightage" : 25
+          },
+          "-Kgi-nuYVcLSlDwSueRD" : {
+            "id" : "-Kgi-nuYVcLSlDwSueRD",
+            "title" : "Prepare loading plan and direct the loading into a container or transport vehicle such that cargo are properly secured to minimise damage and maximum volume / weight of cargo are packed into it.",
+            "weightage" : 50
+          },
+          "-Kgi-nuYVcLSlDwSueRE" : {
+            "id" : "-Kgi-nuYVcLSlDwSueRE",
+            "title" : "Plan and coordinate the large scale shipments and shipment of special cargo including refrigerated cargo, oversize/heavy/out-of-gauge cargo which require expertise in receiving and delivery.",
+            "weightage" : 75
+          },
+          "-Kgi-nuYVcLSlDwSueRF" : {
+            "id" : "-Kgi-nuYVcLSlDwSueRF",
+            "title" : "Develop door-to-door solutions for large scale shipments and out-of-gauge (project) cargo shipment/transportation.",
+            "weightage" : 100
+          }
+        },
+        "title" : "What is your experience with consolidation, deconsolidation, handling and transportation of the various types of cargo?"
+      },
+      "-Kgi-vde2c8_0tKK6j0D" : {
+        "definition" : "In freight forwarding, there is a lot of interactions that company staff have with customers.  This is because customers need information for planning which require the expertise of freight forwarders.    At the operational level, there are 3 levels of interactions with customers.  First, the customer service staff who have to interact with customers daily because they are processing and coordinating the shipments on their behalf.  Second, the customer service staff has to respond to customers’ enquiries on freight services, for example, how to ship and cost of a shipment.  In addition, they will have to deal with operational problems that will happen from time to time.  Third, customers (potential or existing) frequently tapped on the expertise of freight forwarders to help them formulate transportation and routing plans because of new business requirements or venturing into new markets.   \n\nAt the strategic level, the interactions with customers may be low but impactful to the entire freight forwarder business.  It will involve developing and implementing strategies to attract new customers and retain existing customers through developing new agency arrangements, application of technology, etc… that can deliver benefits to the company and customers.",
+        "id" : "-Kgi-vde2c8_0tKK6j0D",
+        "ordering" : 110,
+        "responses" : {
+          "-Kgi-vsdCReqUKui3QaU" : {
+            "id" : "-Kgi-vsdCReqUKui3QaU",
+            "title" : "Process and coordinate with customers on their shipments on a daily basis to meet their requirements.",
+            "weightage" : 25
+          },
+          "-Kgi-vsdCReqUKui3QaV" : {
+            "id" : "-Kgi-vsdCReqUKui3QaV",
+            "title" : "Respond to customers’ enquiries on freight services and any other operational problems relating to their shipments.",
+            "weightage" : 50
+          },
+          "-Kgi-vsdCReqUKui3QaW" : {
+            "id" : "-Kgi-vsdCReqUKui3QaW",
+            "title" : "Formulate transportation and routing plans based on the customers’ needs that can deliver benefits and minimise cost for customers.",
+            "weightage" : 75
+          },
+          "-Kgi-vsdCReqUKui3QaX" : {
+            "id" : "-Kgi-vsdCReqUKui3QaX",
+            "title" : "Develop and implement strategies to attract new customers and retain existing customers.",
+            "weightage" : 100
+          }
+        },
+        "title" : "In your interactions with customers, which of the following statements best describes how you have facilitated or guided them in their freight forwarding operations?"
+      },
+      "-Kgi02Sv4MbuzFc9UW72" : {
+        "definition" : "In most countries, the association representing the freight forwarders will usually develop a standard set of trading conditions for members to adopt to protect their interest.   The set of trading conditions typically spell out the obligations of the shipper and the freight forwarder and limits the liability of the freight forwarder in the event of damage /loss.  \n\nAn agreement is a commitment between 2 parties where the one party makes an offer and the other party accepts it by performing the offer’s terms.   When the clauses for legal recourse are included in the agreement, the agreement becomes a contract which is enforceable in a court of law.  \n\nIn day to day operations, there are simple sales agreement which freight forwarders require customers to sign as an acknowledgement of acceptance of the rates and terms of shipment.   When working with customers with substantial volume, contracts are usually drawn up by customers for freight forwarders acceptance and implementation.\n\nIt will take people with substantial experience and a good understanding of the basic law of contract and the legal framework to be able to resolve potential contractual issues that may arise from time to time.",
+        "id" : "-Kgi02Sv4MbuzFc9UW72",
+        "ordering" : 120,
+        "responses" : {
+          "-Kgi02nPImnr9Vh3NYLn" : {
+            "id" : "-Kgi02nPImnr9Vh3NYLn",
+            "title" : "Understand the standard trading conditions for freight forwarders the terms of agreement with customers and obligations of customers and freight forwarders in any shipment.",
+            "weightage" : 25
+          },
+          "-Kgi02nPImnr9Vh3NYLo" : {
+            "id" : "-Kgi02nPImnr9Vh3NYLo",
+            "title" : "Modify basic terms of agreements (within given powers authorised by the company) in standard sales agreement for customers’ acceptance.",
+            "weightage" : 50
+          },
+          "-Kgi02nPImnr9Vh3NYLp" : {
+            "id" : "-Kgi02nPImnr9Vh3NYLp",
+            "title" : "Prepare and review contracts with customers / suppliers and supervise the implementation of these contracts.",
+            "weightage" : 75
+          },
+          "-Kgi02nPImnr9Vh3NYLq" : {
+            "id" : "-Kgi02nPImnr9Vh3NYLq",
+            "title" : "Proficient in preparing and negotiate overseas agency agreements and/or able to resolve any potential contractual issues with customers, vendors and overseas agents.",
+            "weightage" : 100
+          }
+        },
+        "title" : "What is your level of understanding on contracts and agreements with respect to customers and vendors in the freight forwarding industry?"
+      },
+      "-Kgi0Bd-7ial6AiufW-6" : {
+        "definition" : "In the attempt to provide one-stop integrated services to customers, many freight forwarders have expanded their service offerings to include warehousing and transportation and take over the entire coordination function from customers to move goods from point of origin to the point of consumption.",
+        "id" : "-Kgi0Bd-7ial6AiufW-6",
+        "ordering" : 130,
+        "responses" : {
+          "-Kgi0C7im6XNwt-86fkj" : {
+            "id" : "-Kgi0C7im6XNwt-86fkj",
+            "title" : "Aware of added logistical services provided by some freight forwarders.",
+            "weightage" : 25
+          },
+          "-Kgi0C7im6XNwt-86fkk" : {
+            "id" : "-Kgi0C7im6XNwt-86fkk",
+            "title" : "Able to support, execute and coordinate logistics services to customers.",
+            "weightage" : 50
+          },
+          "-Kgi0C7im6XNwt-86fkl" : {
+            "id" : "-Kgi0C7im6XNwt-86fkl",
+            "title" : "Implement logistics and reverse logistics through integration of other logistics services provided to customers with the core freight services.",
+            "weightage" : 75
+          },
+          "-Kgi0C7im6XNwt-86fkm" : {
+            "id" : "-Kgi0C7im6XNwt-86fkm",
+            "title" : "Implement improvements to the logistics services provided to customers by adopting industry best practices and information technology.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Beside sea freight forwarding services, what is your involvement in providing (and managing) other logistic services to your customers?"
+      },
+      "-Kgi0ITv-Jp8j21KKrp2" : {
+        "definition" : "Each logistics component in the supply chain has different cost elements and different unit of measures upon which cost and pricing models are developed.   This may be different from the pricing model for freight services.  To submit a competitive bid to provide integrated logistics services to potential customers, freight forwarders will need to have a good understanding of the scope of services and the processes involved, the various cost elements and industry practices.  Pricing models should be kept simple because complex pricing models may be difficult to implement.",
+        "id" : "-Kgi0ITv-Jp8j21KKrp2",
+        "ordering" : 140,
+        "responses" : {
+          "-Kgi0IonRoLeHCvQjR5P" : {
+            "id" : "-Kgi0IonRoLeHCvQjR5P",
+            "title" : "Aware of the added cost / resources in providing additional logistical services",
+            "weightage" : 25
+          },
+          "-Kgi0IonRoLeHCvQjR5Q" : {
+            "id" : "-Kgi0IonRoLeHCvQjR5Q",
+            "title" : "Know the industry practices in pricing of logistics services.",
+            "weightage" : 50
+          },
+          "-Kgi0IonRoLeHCvQjR5R" : {
+            "id" : "-Kgi0IonRoLeHCvQjR5R",
+            "title" : "Able to develop a comprehensive pricing plan to provide integrated logistics services to customers.",
+            "weightage" : 75
+          },
+          "-Kgi0IonRoLeHCvQjR5S" : {
+            "id" : "-Kgi0IonRoLeHCvQjR5S",
+            "title" : "Evaluate logistics processes and incorporate industry best practices into pricing strategy.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which of the following statements best describes your level of expertise in cost and pricing of logistic services?"
+      }
+    },
+    "-Kgi0RXpz4A2hIFWdas5" : {
+      "-Kgi0WK4D4f80csp8YrE" : {
+        "definition" : "The role and objectives of a warehouse can vary with each individual’s experience with the operations.   For those who work daily to fulfil orders for customers, the role and objective of the warehouse is to provide storage and provide service to meet customer’s requirements.   In today’s context, the role of the warehouse is no longer restricted to just providing storage; it provides a full range of value added services from consolidation, inventory management to order management services.   For a third-party logistics operated warehouse, the primary objective of warehousing is to maximise profits through the effective use of warehouse resources while satisfying customer requirements.  To a goods owner-operated warehouse, the primary objective of the warehouse is about cost minimisation.   Regardless of its objective, the warehouse needs to make best use of 3 key resources namely, space, people and material handling equipment.  This is achieved through understanding of the capabilities of the resources and effectively organizing them through appropriate application of information technology.",
+        "id" : "-Kgi0WK4D4f80csp8YrE",
+        "ordering" : 10,
+        "responses" : {
+          "-Kgi0WWjBFbrSslUbp9z" : {
+            "id" : "-Kgi0WWjBFbrSslUbp9z",
+            "title" : "Familiar with the operating procedures and know the customers’ requirements.",
+            "weightage" : 25
+          },
+          "-Kgi0WWjBFbrSslUbpA-" : {
+            "id" : "-Kgi0WWjBFbrSslUbpA-",
+            "title" : "Know the operational plan for the warehouse and how it helps to meet customers’ requirements.",
+            "weightage" : 50
+          },
+          "-Kgi0WWjBFbrSslUbpA0" : {
+            "id" : "-Kgi0WWjBFbrSslUbpA0",
+            "title" : "Able to integrate the various resources in order to meet with customers’ requirements and to achieve the order fulfilment objectives.",
+            "weightage" : 75
+          },
+          "-Kgi0WWjBFbrSslUbpA1" : {
+            "id" : "-Kgi0WWjBFbrSslUbpA1",
+            "title" : "Develop operational strategies to improve performance or optimise warehouse operations which are in line with strategic objectives of the business.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Based on your work experience, what do you understand are the roles and objectives of a warehouse?"
+      },
+      "-Kgi0bunHdtHn1as0P-S" : {
+        "definition" : "The functional areas of any warehouse will cover inbound, storage and outbound operations.  Inbound operations will involve warehouse processes such as inbound order processing, receiving and putaway to storage.  Storage operations involve warehouse processes such as stock-taking, cycle-counting, housekeeping and replenishment.  Outbound operations will involve order processing, order picking, packing and releasing for shipment/delivery.   These warehouse processes are interlinked and how well the warehouse operates will depend on how well these processes are structured and organised to complement the given storage and material handling system.",
+        "id" : "-Kgi0bunHdtHn1as0P-S",
+        "ordering" : 20,
+        "responses" : {
+          "-Kgi0c4rpZPKONFrNhF6" : {
+            "id" : "-Kgi0c4rpZPKONFrNhF6",
+            "title" : "Familiar with standard operating procedures and safety guidelines in the warehouse",
+            "weightage" : 25
+          },
+          "-Kgi0c4rpZPKONFrNhF7" : {
+            "id" : "-Kgi0c4rpZPKONFrNhF7",
+            "title" : "Accountable to ensure that part or all the warehouse processes are executed and complying to safety standards",
+            "weightage" : 50
+          },
+          "-Kgi0c4rpZPKONFrNhF8" : {
+            "id" : "-Kgi0c4rpZPKONFrNhF8",
+            "title" : "Conduct audits to review processes and implement practical solutions to improve the warehouse execution processes.",
+            "weightage" : 75
+          },
+          "-Kgi0c4rpZPKONFrNhF9" : {
+            "id" : "-Kgi0c4rpZPKONFrNhF9",
+            "title" : "Adopt industry best practices to improve the warehouse execution processes.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which of the following statement best describes your involvement with warehouse processes and operating procedures?"
+      },
+      "-Kgi0iP0QcRup4X720Wj" : {
+        "definition" : "Warehouse administration refers to those activities that are necessary to ensure the continual functioning of the warehouse and are generally not billable to customers.  Some examples of warehouse administration tasks / functions are given as follows:\n\na.\tPreparation of reports eg inventory report, movement report, performance report required by customers and management.\nb.\tMonitoring and arranging the routine maintenance and breakdown repairs of equipment and facilities.\nc.\tManaging safety and security of the warehouse.   \nd.\tArrangement and administration of temporary workers including their payment.\ne.\tTraining of new operators.\n\nSince warehouse administrative tasks are not billable to customers, they are cost elements that directly impact the profitability of the warehouse.",
+        "id" : "-Kgi0iP0QcRup4X720Wj",
+        "ordering" : 30,
+        "responses" : {
+          "-Kgi0iafUP6UMD3wx7YL" : {
+            "id" : "-Kgi0iafUP6UMD3wx7YL",
+            "title" : "Perform administrative tasks such as preparing inventory and other reports required by customers, damage inspection / disposal and making arrangement for equipment maintenance.",
+            "weightage" : 25
+          },
+          "-Kgi0iafUP6UMD3wx7YM" : {
+            "id" : "-Kgi0iafUP6UMD3wx7YM",
+            "title" : "Able to interpret and utilise reports generated and systems to track warehouse activities including conduct of damage assessment.",
+            "weightage" : 50
+          },
+          "-Kgi0iafUP6UMD3wx7YN" : {
+            "id" : "-Kgi0iafUP6UMD3wx7YN",
+            "title" : "Able to assess the impact on warehouse administration as a result of changes in other warehouse functions.",
+            "weightage" : 75
+          },
+          "-Kgi0iafUP6UMD3wx7YO" : {
+            "id" : "-Kgi0iafUP6UMD3wx7YO",
+            "title" : "Continuously review the administrative processes in the warehouse in an effort to reduce administrative cost and/or optimise resources.",
+            "weightage" : 100
+          }
+        },
+        "title" : "What is your involvement in the warehouse administration?"
+      },
+      "-Kgi0qmlkuXnw99Tx-tL" : {
+        "definition" : "Storage systems are mechanical structures that help the warehouse to organise, manage and preserve the products while in transit at the warehouse.  There are many types of storage systems used in warehouse and these include selective pallet rackings, double deep rackings, drive-in rackings, drive-through rackings, mobile rackings, automated storage and retrieval systems, shelvings,  carousels and so on.  The type of storage system to be deployed is determined primarily by the type of product and size of the load (in terms of length, breadth, height and weight) that it is required to handle.   Thereafter, the selection of the most appropriate storage system is driven by 2 factors, namely capacity versus throughput rate, which are inversely related.  The challenge for the warehouse is to try and find a right balance to meet customers’ requirements.",
+        "id" : "-Kgi0qmlkuXnw99Tx-tL",
+        "ordering" : 40,
+        "responses" : {
+          "-Kgi0rSHGQIlNbhUDl0f" : {
+            "id" : "-Kgi0rSHGQIlNbhUDl0f",
+            "title" : "Familiar with the common storage systems and the types of products that they can be used to store.",
+            "weightage" : 25
+          },
+          "-Kgi0rSHGQIlNbhUDl0g" : {
+            "id" : "-Kgi0rSHGQIlNbhUDl0g",
+            "title" : "Understand storage/retrieval systems, its layout, constraints and how it can impact warehouse operations.",
+            "weightage" : 50
+          },
+          "-Kgi0rSHGQIlNbhUDl0h" : {
+            "id" : "-Kgi0rSHGQIlNbhUDl0h",
+            "title" : "Manage the storage and retrieval of products for any storage systems to ensure optimal storage and product flow.",
+            "weightage" : 75
+          },
+          "-Kgi0rSHGQIlNbhUDl0i" : {
+            "id" : "-Kgi0rSHGQIlNbhUDl0i",
+            "title" : "Able to apply industry best practices to any warehouse operation and select the most appropriate storage systems that will maximise storage capacity and throughput.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Do you know the various types of storage systems and their applications?"
+      },
+      "-Kgi1_0Bhct8tbPKH28U" : {
+        "definition" : "Material Handling Equipment refers to equipment that are used in the warehouse to move products within the storage facilities.  This will include equipment that help in storage and retrieval of products from the storage system as well as equipment needed to support loading and unloading from containers and trucks.   Some examples include forklifts, order pickers, pallet jacks, pallet trucks, reach trucks, VNA and so on.\n\nOrder picking methods refers to how the products can be picked from the storage in the most efficient way to meet customers’ orders requirements.   The warehouse can choose to pick by order, batch pick, wave pick, adopting pick-to-light system if technology is applied and so on.  The selection of the order picking method is dependent on the material handling equipment, storage system and warehouse management system used.",
+        "id" : "-Kgi1_0Bhct8tbPKH28U",
+        "ordering" : 50,
+        "responses" : {
+          "-Kgi1wsmrq30KanOgOua" : {
+            "id" : "-Kgi1wsmrq30KanOgOua",
+            "title" : "Familiar with the common material handling equipment and how they are used in the warehouse.",
+            "weightage" : 25
+          },
+          "-Kgi1wsmrq30KanOgOub" : {
+            "id" : "-Kgi1wsmrq30KanOgOub",
+            "title" : "Aware of constraints in their systems and how other systems in the industry have overcome these constraints.",
+            "weightage" : 50
+          },
+          "-Kgi1wsmrq30KanOgOuc" : {
+            "id" : "-Kgi1wsmrq30KanOgOuc",
+            "title" : "Make improvements to order assignment, order picking methods, routing and deployment of resources to improve warehouse performance and productivity.",
+            "weightage" : 75
+          },
+          "-Kgi1wsniXaK0od_2bjy" : {
+            "id" : "-Kgi1wsniXaK0od_2bjy",
+            "title" : "Adopt appropriate technology and apply industry best practices to optimise warehouse performance and productivity in any warehouse operation.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Do you know the various types of material handling equipment, order picking methods and how they can impact warehouse performance and productivity?"
+      },
+      "-Kgi24t9RtnD0s1hJdFl" : {
+        "definition" : "Customer requirements refer to a set of operational and performance specifications that is agreed by the warehouse and the customer.  There are 2 aspects to customer requirements.  First, it states the expectations on how order fulfilment should be carried out in terms of labelling, packing, picking criteria, format of packing list and so on.  Second, it states the expectations on the performance standards required of the warehouse in terms of lead time to delivery, shipment accuracy and so on.",
+        "id" : "-Kgi24t9RtnD0s1hJdFl",
+        "ordering" : 60,
+        "responses" : {
+          "-Kgi2AIAWCDCyuwNWTx4" : {
+            "id" : "-Kgi2AIAWCDCyuwNWTx4",
+            "title" : "Processing and executing daily orders according to customer requirements.",
+            "weightage" : 25
+          },
+          "-Kgi2AIAWCDCyuwNWTx5" : {
+            "id" : "-Kgi2AIAWCDCyuwNWTx5",
+            "title" : "Managing and prioritising customers’ orders daily for processing and execution.",
+            "weightage" : 50
+          },
+          "-Kgi2AIAWCDCyuwNWTx6" : {
+            "id" : "-Kgi2AIAWCDCyuwNWTx6",
+            "title" : "Monitoring operational performance and directing recovery action in the event of a service   failure or implementing action plans for improvements.",
+            "weightage" : 75
+          },
+          "-Kgi2AIAWCDCyuwNWTx7" : {
+            "id" : "-Kgi2AIAWCDCyuwNWTx7",
+            "title" : "Reviewing the warehouse operational performance and developing strategies to improve operational performance and prevent service failures.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which of the following statement best describes your role in supporting your organisation to meet customers’ requirements in a warehouse operation?"
+      },
+      "-Kgi2G10voItcc0ZOK-J" : {
+        "definition" : "IT applications in warehouse involve both computer software and hardware.  At the centre of any IT application in the warehouse is the Warehouse Management System (WMS) which is an application software designed to help the warehouse to manage the movement and storage of the products from end-to-end operations.   It is the core system that interfaces with other application systems that may reside in hardware technology such as Data Terminals, RF scanners and RFID to receive or push information such as order / picking details into.   (RFID is the acronym for radio frequency identification.  It is simply a wireless communication technology using radio waves that allows the unique identification of the tagged object.   RFID tags can be active or passive type.)  The focus of IT applications in the warehouse must be to achieve the following:\n-\tSimplify the warehouse processes\n-\tImprove warehouse labour productivity\n-\tImprove performance in terms of inventory accuracy and shipment accuracy\n-\tReduce lead time in warehouse processing\n-\tProvide real-time inventory information to customer.",
+        "id" : "-Kgi2G10voItcc0ZOK-J",
+        "ordering" : 70,
+        "responses" : {
+          "-Kgi2GGC4vvkxKObXBce" : {
+            "id" : "-Kgi2GGC4vvkxKObXBce",
+            "title" : "Aware of warehouse management system and technology that is applied to warehouse operations.",
+            "weightage" : 25
+          },
+          "-Kgi2GGDmIZc6gAXq6x5" : {
+            "id" : "-Kgi2GGDmIZc6gAXq6x5",
+            "title" : "User of scanners, barcodes and Warehouse Management System (WMS) for daily operation.",
+            "weightage" : 50
+          },
+          "-Kgi2GGDmIZc6gAXq6x6" : {
+            "id" : "-Kgi2GGDmIZc6gAXq6x6",
+            "title" : "Utilise the warehouse management system and integrate with technological tools to improve operational performance.",
+            "weightage" : 75
+          },
+          "-Kgi2GGDmIZc6gAXq6x7" : {
+            "id" : "-Kgi2GGDmIZc6gAXq6x7",
+            "title" : "Select and implement the most appropriate system and technology available in the market and integrate with process evaluation and redesign methods such as lean 6-sigma to drive improvements in warehouse operational performance.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which of the following statements best describe your experience / involvement with Information Technology (IT) applications in warehouse operations?"
+      },
+      "-Kgi2b_Vx2AfEfr-vQ3s" : {
+        "definition" : "In any warehouse operations, customers’ order volume and inventory are never constant.  As such, the warehouse has to continually plan, deploy and manage 3 key resources, namely labour, equipment and space, to meet with the changing demands.   At the operational level, people and equipment resource need to be moved around daily because of equipment breakdown or undergoing maintenance and staff going on leave.  It also involve planning to recruit new or temporary staff for replacement or to meet expected increase in customers’ order volume.   At a strategic level, there is a need to nurture and build talents so that they can be deployed to start up new operations in other facilities.",
+        "id" : "-Kgi2b_Vx2AfEfr-vQ3s",
+        "ordering" : 80,
+        "responses" : {
+          "-Kgi2cxb03w_XJ44tpBW" : {
+            "id" : "-Kgi2cxb03w_XJ44tpBW",
+            "title" : "Able to prioritise shipment orders execution according to the delivery schedule.",
+            "weightage" : 25
+          },
+          "-Kgi2cxcCArZBPHLdVrN" : {
+            "id" : "-Kgi2cxcCArZBPHLdVrN",
+            "title" : "Deploy personnel and equipment resources for daily operation (receiving, picking, packing and shipping activities) to meet delivery schedule expected of the warehouse.",
+            "weightage" : 50
+          },
+          "-Kgi2cxcCArZBPHLdVrO" : {
+            "id" : "-Kgi2cxcCArZBPHLdVrO",
+            "title" : "Able to develop standard times for critical warehouse activities which can be used to plan resources and estimated delivery timeframe required to cope with potential variations in order volume.",
+            "weightage" : 75
+          },
+          "-Kgi2cxcCArZBPHLdVrP" : {
+            "id" : "-Kgi2cxcCArZBPHLdVrP",
+            "title" : "Able to project and develop the right resources needed and deploy them across multiple operations to achieve strategic objectives.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which of the following statement best describes your role and expertise in order and resource planning and deployment in the warehouse?"
+      },
+      "-Kgi2ozjvOttsSJyHTJ-" : {
+        "definition" : "There are many services that a warehouse provides to her customers covering both inbound and outbound operations.  The standard warehouse services provided include storage, stuffing and un-stuffing, handling (storage and retrieval), order picking and packing, labelling, inspection, order processing and many others.   Such services can involve performing single or multiple warehouse activities which are transparent to customers.  Warehouse can also function as a single point of contact providing integrated logistics services to customers by working with freight forwarders and transport providers.  These freight forwarders and transport providers can be supporting business partners of the warehouse or appointed by the customers.  In this case, the warehouse takes over the coordination role from the customers by working with multiple parties along the supply chain to ensure the goods are delivered to their clients according to agreed performance specifications.",
+        "id" : "-Kgi2ozjvOttsSJyHTJ-",
+        "ordering" : 90,
+        "responses" : {
+          "-Kgi2prqt_ryfxZ_OrhQ" : {
+            "id" : "-Kgi2prqt_ryfxZ_OrhQ",
+            "title" : "Able to execute the various daily activities involved in inbound and outbound operations of a warehouse.",
+            "weightage" : 25
+          },
+          "-Kgi2prqt_ryfxZ_OrhR" : {
+            "id" : "-Kgi2prqt_ryfxZ_OrhR",
+            "title" : "Manage and supervise the various warehouse activities from order initiation, execution and completion including inventory.",
+            "weightage" : 50
+          },
+          "-Kgi2prqt_ryfxZ_OrhS" : {
+            "id" : "-Kgi2prqt_ryfxZ_OrhS",
+            "title" : "Integrated other logistics services (eg transportation, freight booking and coordination, documentation) provided to customers with the warehouse operations.",
+            "weightage" : 75
+          },
+          "-Kgi2prqt_ryfxZ_OrhT" : {
+            "id" : "-Kgi2prqt_ryfxZ_OrhT",
+            "title" : "Besides managing integrated logistics services, you are able to apply quantitative assessment approach to improve warehouse processes and layout and develop appropriate performance measures to motivate employees.",
+            "weightage" : 100
+          }
+        },
+        "title" : "What is the scope of services that you are of have been involved in managing a warehouse operation?"
+      },
+      "-Kgi2vf4cBTaEtGrmeJH" : {
+        "definition" : "One of the key focus of any warehouse is to try and keep warehouse cost to a minimum.   Warehouse cost includes both fixed cost and operating cost.  Fixed cost includes land and building cost, storage and material handling equipment cost, IT cost and others. Operating cost includes labour cost, utility cost, material cost and others.   Managing cost has many levels.  First, given these various cost elements, a warehouse can compute unit or standard cost for their operation using costing methods such as activity-based costing.   The unit or standard cost is required because it forms the basis for the warehouse to determine the price to charge a service offered to customers.    Second, a warehouse must know which elements are the key cost drivers and direct efforts at reducing these cost drivers.   Third, managing cost requires the warehouse to know how to develop a budget from which monitoring can be made between actual performance and budgeted performance.  \n\nLocation analysis techniques are qualitative approach to help in deciding the best location for a warehouse.  Some of these techniques include location rating factor, the centre-of-gravity technique and the load-distance technique.",
+        "id" : "-Kgi2vf4cBTaEtGrmeJH",
+        "ordering" : 100,
+        "responses" : {
+          "-Kgi2xheF1YtyZ_dosJi" : {
+            "id" : "-Kgi2xheF1YtyZ_dosJi",
+            "title" : "Adopt good practices and aware of bad practices to avoid that can contribute to the cost of warehouse operations.",
+            "weightage" : 25
+          },
+          "-Kgi2xheF1YtyZ_dosJj" : {
+            "id" : "-Kgi2xheF1YtyZ_dosJj",
+            "title" : "Know the types of warehouse costs and understand simple costing methods.",
+            "weightage" : 50
+          },
+          "-Kgi2xheF1YtyZ_dosJk" : {
+            "id" : "-Kgi2xheF1YtyZ_dosJk",
+            "title" : "Able to compute the types of warehouse costs and identify areas where and how some of these costs could be reduced.",
+            "weightage" : 75
+          },
+          "-Kgi2xheF1YtyZ_dosJl" : {
+            "id" : "-Kgi2xheF1YtyZ_dosJl",
+            "title" : "Able to apply location analysis techniques to decide the best location for a warehouse and develop the budget with detailed breakdown of operating expenses to set up a new warehouse operations.",
+            "weightage" : 100
+          }
+        },
+        "title" : "What is your involvement in managing the cost of a warehouse operation?"
+      },
+      "-Kgi340O0fH0pQM28Q8g" : {
+        "definition" : "Warehouse operations involve all the activities primarily need to fulfil customers’ orders as well as those activities that are necessary to ensure that the operation is safe, secure and efficient.   Skilled personnel are required to ensure that the warehouse operate as an integral and efficient unit.  At the lowest level, it will involve physical movements of the products in the warehouse which require skilled operators to store and retrieve products from the storage location and transfer products between locations to optimise the storage capacity.    On a daily basis, skilled resources are required to monitor the order volume and resource availability and make changes when required to ensure that the warehouse can continue to meet customers’ order requirements.  At the macro level, it requires skills to design the process and layout and integrate the product and information flow from end-to-end operations.",
+        "id" : "-Kgi340O0fH0pQM28Q8g",
+        "ordering" : 110,
+        "responses" : {
+          "-Kgi34hV4gzddqvSZXnL" : {
+            "id" : "-Kgi34hV4gzddqvSZXnL",
+            "title" : "Perform product retrieval from locations, storage into location and transfer between locations in the warehouse under instructions in accordance to standard operating procedure.",
+            "weightage" : 25
+          },
+          "-Kgi34hV4gzddqvSZXnM" : {
+            "id" : "-Kgi34hV4gzddqvSZXnM",
+            "title" : "Monitor and re-sequence / modify warehouse activities when the need arises to ensure efficiency and meeting customers’ requirements.",
+            "weightage" : 50
+          },
+          "-Kgi34hV4gzddqvSZXnN" : {
+            "id" : "-Kgi34hV4gzddqvSZXnN",
+            "title" : "Organise and integrate product and information flow in the warehouse from order receipt to storage to shipment to ensure efficient operation.",
+            "weightage" : 75
+          },
+          "-Kgi34hV4gzddqvSZXnO" : {
+            "id" : "-Kgi34hV4gzddqvSZXnO",
+            "title" : "Review and refine warehouse strategy continuously to align with the overall business objectives.",
+            "weightage" : 100
+          }
+        },
+        "title" : "What is/are your expertise that you contribute to the warehouse operation?"
+      },
+      "-Kgi3AsAKIsuAzORFG9t" : {
+        "definition" : "Storage planning is about how you organise and store the products so that they can be retrieved efficiently.  It involves how to group and palletise products so that they can fit into the storage system available.  It involves developing a storage plan which help the operator on the ground to decide which location to keep the product in the storage system.  Such storage plan could be worked out using ABC analysis or any other methods.\n\nCapacity planning in the context of a warehouse involves 2 aspects.  First, it involves monitoring the utilisation and creating storage capacity to meet current and future customers’ inventory volume.  Second, it involves projecting the storage and throughput capacity / volume that the warehouse can be capable of handling through building new facilities or re-design of the existing storage layout and system.     The building of new warehouse capacity must be align to the overall business objectives.",
+        "id" : "-Kgi3AsAKIsuAzORFG9t",
+        "ordering" : 120,
+        "responses" : {
+          "-Kgi3EERwBqh4gyvT71-" : {
+            "id" : "-Kgi3EERwBqh4gyvT71-",
+            "title" : "Perform palletisation for storage and shipment with considerations given to the height, weight and special stacking requirements.",
+            "weightage" : 25
+          },
+          "-Kgi3EERwBqh4gyvT710" : {
+            "id" : "-Kgi3EERwBqh4gyvT710",
+            "title" : "Device storage plan for the warehouse using ABC analysis or any other methods to ensure efficiency in storage and retrieval of products for order fulfilment.",
+            "weightage" : 50
+          },
+          "-Kgi3EERwBqh4gyvT711" : {
+            "id" : "-Kgi3EERwBqh4gyvT711",
+            "title" : "Monitor storage utilisation continuously and revise warehouse storage plan and layout to meet varying demands.",
+            "weightage" : 75
+          },
+          "-Kgi3EERwBqh4gyvT712" : {
+            "id" : "-Kgi3EERwBqh4gyvT712",
+            "title" : "Review and re-design / select appropriate storage systems to meet changes in orders and products profile in the warehouse.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which of the following statement best describe your expertise in storage and capacity planning?"
+      },
+      "-Kgi3Mi1DjH6mcD-F9Rm" : {
+        "definition" : "Driving improvements in warehouse operations require multi-level approach.  At the workplace, the operators should have the correct mindset and embrace 5S, which is a workplace organisation method using 5 Japanese words – Seiri (Sort), Seiton (Set), Seiso (Shine), Seiketsu (Standardise) and Shitsuke (Sustain). The aim of 5S is to organise a warehouse’s activities in order to increase productivity, reduce waste and create cost savings.    Next, the people in supervisory role must understand process and able to use process analysis tools available to help determine areas of improvements in the warehouse.  Some examples of process analysis tools include Value Chain Mapping, Process Flow Chart, Swim-lane flow charting, Spaghetti Diagram, etc…    To know if improvements have been made, the measurement process must first be put in place.  What cannot be measured cannot be improved.  Hence, implementing performance measurements is necessary step towards driving improvements in the operations.  Warehouse performance indicators can include inventory accuracy, shipment accuracy, pick rate, storage utilisation, cost per unit.. etc   At the strategic level, driving improvements involves examining the supply chain in which warehouse operations is one of the key link.",
+        "id" : "-Kgi3Mi1DjH6mcD-F9Rm",
+        "ordering" : 130,
+        "responses" : {
+          "-Kgi3NamnCCuMSUvBUYZ" : {
+            "id" : "-Kgi3NamnCCuMSUvBUYZ",
+            "title" : "Understand and support 5S (sort, set, shine, standardise, sustain) initiative of company in practice.",
+            "weightage" : 25
+          },
+          "-Kgi3NamnCCuMSUvBUY_" : {
+            "id" : "-Kgi3NamnCCuMSUvBUY_",
+            "title" : "Able to conduct process analysis to determine areas of improvement.",
+            "weightage" : 50
+          },
+          "-Kgi3NamnCCuMSUvBUYa" : {
+            "id" : "-Kgi3NamnCCuMSUvBUYa",
+            "title" : "Able to implement appropriate performance indicators to measure operational efficiency, utilisation and productivity of a warehouse operation.",
+            "weightage" : 75
+          },
+          "-Kgi3NamnCCuMSUvBUYb" : {
+            "id" : "-Kgi3NamnCCuMSUvBUYb",
+            "title" : "Apply business and supply chain management principles to organise the warehouse for efficiency.",
+            "weightage" : 100
+          }
+        },
+        "title" : "Which of the following statement best describe your expertise in organising and driving improvements in the warehouse?"
+      }
+    }
+  },
+  "sets" : {
+    "-KgXh61Wibo2UkUjWlI8" : {
+      "category" : "General",
+      "id" : "-KgXh61Wibo2UkUjWlI8",
+      "ordering" : 10,
+      "published" : true,
+      "title" : "Freight Forwarding (sea) Execution and Management"
+    },
+    "-Kgi0RXpz4A2hIFWdas5" : {
+      "category" : "Industry",
+      "id" : "-Kgi0RXpz4A2hIFWdas5",
+      "ordering" : 1,
+      "published" : true,
+      "title" : "Warehouse Operation Execution and Management"
+    }
+  }
+}

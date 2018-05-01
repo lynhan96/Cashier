@@ -1,0 +1,209 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.table-container {
+    height: 80vh;
+    border: 2px solid black
+}
+
+.table-container>div {
+    display: inline-block;
+}
+
+.table-container>.table {
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.table-container>.table .table-wrapper {
+    width: 200px;
+    height: 150px;
+    background: center no-repeat;
+    background-size: cover;
+    display: flex;
+    margin: 20px 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.table-container>.table .table-wrapper .table-status {
+    text-align: center;
+    background: green;
+    color: white;
+    padding: 2px 15px;
+    border-radius: 20px;
+}
+
+.table-container>.table .table-wrapper .table-name {
+    text-align: center;
+    background: rgb(0, 188, 212);
+    color: white;
+    margin-bottom: 10px;
+    padding: 2px 15px;
+    border-radius: 20px;
+}
+
+.resize-drag {
+    background-color: #29e;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 20px;
+    width: 120px;
+    /* This makes things *much* easier */
+    box-sizing: border-box;
+}
+
+.resize-container {
+    display: inline-block;
+    width: 100%;
+    height: 240px;
+}
+
+.react-draggable,
+.cursor {
+    cursor: move;
+}
+
+.no-cursor {
+    cursor: auto;
+}
+
+.cursor-y {
+    cursor: ns-resize;
+}
+
+.cursor-x {
+    cursor: ew-resize;
+}
+
+.react-draggable strong {
+    background: #ddd;
+    border: 1px solid #999;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 3px 5px;
+    text-align: center;
+}
+
+.box {
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+}
+
+// menu
+.button-view-order, .button-order {
+    width: auto;
+    height: 100px;
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+    box-shadow: 0 12px 20px -10px rgba(76, 175, 80, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(76, 175, 80, 0.2);
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 160px;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 10px;
+    font-weight: bold;
+    -webkit-transition: box-shadow 0.2s ease;
+    -moz-transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    color: #fff!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    i {
+        vertical-align: bottom;
+    }
+}
+
+.button-order {
+    right: 15px;
+    background: linear-gradient(60deg,#26c6da,#00acc1);
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(0,188,212,.4);
+    font-size: 22px;
+    width: 120px;
+}
+
+.food-item {
+    border-right: 2px dashed #ffd984;
+    border-bottom: 2px dashed #ffd984;
+    margin-top: 10px;
+}
+
+.number-order span { 
+    font-size: 25px; 
+    font-weight: bold; 
+    margin: 0 10px; 
+    right: 15px; 
+} 
+
+.sidebar .nav li:first-child>a,
+.off-canvas-sidebar .nav li:first-child>a {
+    margin: 10px 15px 0;
+}
+
+.sidebar {
+    .sub-menu {
+        padding: 0 10px;
+        margin-top: -10px;
+        li {
+            list-style-type: none;
+            display: flex;
+            width: 100%;
+            a {
+                padding: 5px 20px;
+                width: 100%;
+                span {
+                    line-height: 33px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .sidebar::before,
+    .off-canvas-sidebar::before {
+        background-color: transparent;
+    }
+}
+
+.table-selected{
+    background: #26c6da;
+    color: white
+}
+
+.button-confirm-food{
+    background: green !important;
+}
+
+.button-done-food{
+    background: #26c6da !important;
+}
+
+.button-delete-food{
+    background: red !important;
+}
+
+.main-panel>.content {
+    margin-top: 60px !important;
+}

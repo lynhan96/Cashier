@@ -1,0 +1,9 @@
+node_modules/
+public/bundle.js
+public/index.html
+npm-debug.log
+yarn-error.log
+yarn.log
+package-log.json
+functions/node_modules/
+functions/npm-debug.log

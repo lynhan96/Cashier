@@ -1,0 +1,26 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended", "standard"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [ "react" ],
+  "env": {
+    "browser" : true,
+    "es6" : true,
+    "jest": true
+  },
+  "globals": {
+    "__DEV__": false,
+    "COMMUNITY_LINK": false,
+    "GOOGLE_CAPTCHAR_KEY": false,
+    "API_SCFP_SEND_ADMIN_EMAIL": false
+  },
+  "rules": {
+    "space-before-function-paren": "off",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "operator-linebreak": "off"
+  }
+}
