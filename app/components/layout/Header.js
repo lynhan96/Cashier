@@ -5,33 +5,12 @@ import { connect } from 'react-redux'
 import Navigator from 'lib/Navigator'
 import { dispatchLogout } from 'ducks/admin'
 import { markReadMessage } from 'lib/actions/notification'
-import { removeFood } from 'lib/actions/ordering'
-import { confirmAlert } from 'react-confirm-alert'
-import 'react-confirm-alert/src/react-confirm-alert.css'
 
 class Header extends Component {
   constructor (props) {
     super(props)
     this.search = this.search.bind(this)
     this.readMessage = this.readMessage.bind(this)
-    this.showConfirmAlert = this.showConfirmAlert.bind(this)
-  }
-
-  showConfirmAlert(notificationId, orderingId, foodIndex) {
-    confirmAlert({
-      title: '',
-      message: 'Bạn có đồng ý hủy món ăn này?',
-      buttons: [
-        {
-          label: 'Có',
-          onClick: () => this.props.dispatch(removeFood(notificationId, orderingId, foodIndex, true))
-        },
-        {
-          label: 'Không',
-          onClick: () => this.props.dispatch(removeFood(notificationId, orderingId, foodIndex, false))
-        }
-      ]
-    })
   }
 
   readMessage(redirectUrl, messageId) {
@@ -77,14 +56,6 @@ class Header extends Component {
                   <ul className='dropdown-menu'>
                     {notificationData.map((value, index) => {
                       if (!value.read || value.read === 'yes') return ''
-
-                      if (value.requiredDeleteFood && value.requiredDeleteFood === 'yes') {
-                        return (
-                          <li key={index}>
-                            <Link to='#' onClick={e => { e.preventDefault(); this.showConfirmAlert(value.id, value.orderingId, value.foodIndex) }}>{value.message}</Link>
-                          </li>
-                        )
-                      }
 
                       let url = ''
 
