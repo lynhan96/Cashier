@@ -3,21 +3,25 @@ import { Link } from 'react-router'
 import { connect } from 'react-redux'
 import R from 'ramda'
 import ReactQueryParams from 'react-query-params'
-import { isAdmin } from 'components/wrappers/isAdmin'
+import Navigator from 'lib/Navigator'
 
+import { isAdmin } from 'components/wrappers/isAdmin'
 import { priceToString } from 'lib/objects'
-import { fetchOrderings, changeOrderFoodStatus } from 'lib/actions/ordering'
+import { fetchOrderings, changeOrderStatus } from 'lib/actions/ordering'
 import { fetchNotifications } from 'lib/actions/notification'
+import OrderingNotFound from 'components/OrderingNotFound'
 
 class TableOrderDetail extends ReactQueryParams {
   constructor (props) {
     super(props)
 
-    this.changeFoodStatus = this.changeFoodStatus.bind(this)
+    this.changeStatus = this.changeStatus.bind(this)
   }
 
-  changeFoodStatus(orderingID, foodIndex, newStatus) {
-    this.props.dispatch(changeOrderFoodStatus(orderingID, foodIndex, newStatus))
+  changeStatus(orderingID, newStatus) {
+    this.props.dispatch(changeOrderStatus(orderingID, newStatus))
+
+    Navigator.push('/map-tables')
   }
 
   componentDidMount() {
@@ -30,24 +34,13 @@ class TableOrderDetail extends ReactQueryParams {
     let params = this.queryParams
     const currentTable = tables[params.tableId]
 
-    if (!currentTable.lastOrderingId) {
-      return (
-        <div className='content'>
-          <div className='container-fluid animated fadeIn'>
-            <div className='row'>
-              <div className='card'>
-                <div className='card-header' data-background-color='purple'>
-                  <h3 className='title' style={style.header}>Không tìm thấy Order của bàn này</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )
+    if (!currentTable.lastOrderingId || currentTable.lastOrderingId === '') {
+      return <OrderingNotFound/>
     }
 
     let items = []
     let ordering = null
+
     if (orderings) {
       ordering = orderings[currentTable.lastOrderingId]
 
@@ -57,19 +50,7 @@ class TableOrderDetail extends ReactQueryParams {
     }
 
     if (ordering == null || !ordering) {
-      return (
-        <div className='content'>
-          <div className='container-fluid animated fadeIn'>
-            <div className='row'>
-              <div className='card'>
-                <div className='card-header' data-background-color='purple'>
-                  <h3 className='title' style={style.header}>Không tìm thấy Order của bàn này</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )
+      return <OrderingNotFound/>
     }
 
     return (
@@ -163,13 +144,19 @@ class TableOrderDetail extends ReactQueryParams {
                       to='#'
                       style={style.deleteFood}
                       onClick={e => { e.preventDefault() }}
-                    >Yêu cầu sủa đổi hóa đơn</Link>
+                    >Yêu cầu sửa đổi hóa đơn</Link>
                     <Link
                       className='button-done-food'
                       to='#'
                       style={style.deleteFood}
                       onClick={e => { e.preventDefault() }}
                     >Xuất hóa đơn</Link>
+                    <Link
+                      className='button-confirm-food'
+                      to='#'
+                      style={style.deleteFood}
+                      onClick={e => { e.preventDefault(); this.changeStatus(ordering.id, 'Đã thanh toán') }}
+                    >Xác nhận hóa đơn đã thanh toán</Link>
                   </div>
                 </div>
               </div>
@@ -230,6 +217,6 @@ const style = {
     padding: '8px 15px',
     borderRadius: '5px',
     margin: '8px 5px',
-    fontWeight: 'bold'
+    fontWeight: '500'
   }
 }

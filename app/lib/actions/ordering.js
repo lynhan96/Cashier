@@ -3,6 +3,7 @@ import R from 'ramda'
 import { getAdminData, getOrderingState, getTableState } from 'lib/Constant'
 import * as firebase from 'firebase'
 import { markReadMessage } from 'lib/actions/notification'
+import { showNotification } from './showNotification'
 
 export const FETCH_ORDERING_BEGIN = 'FETCH_ORDERING_BEGIN'
 export const FETCH_ORDERING_SUCCESS = 'FETCH_ORDERING_SUCCESS'
@@ -39,29 +40,38 @@ export const fetchOrderings = params => {
   }
 }
 
-export const changeOrderFoodStatus = (orderingId, itemIndex, newStatus) => {
+export const changeOrderStatus = (orderingId, newStatus) => {
   return dispatch => {
     const employeeData = getAdminData()
     const orderingData = getOrderingState().items
+    const tableData = getTableState().items
     let currentOrder = orderingData[orderingId]
 
-    currentOrder.items[itemIndex].status = newStatus
-
-    const totalPrice = R.pipe(
-      R.values,
-      R.map(item => {
-        if (item.status === 'Hết món') {
-          return 0
-        } else {
-          return item.currentPrice * item.quantity
-        }
-      }),
-      R.sum
-    )(currentOrder.items)
-
-    currentOrder.totalPrice = totalPrice
+    currentOrder.status = newStatus
 
     firebase.database().ref(employeeData.vid + '/orders/').child(orderingId).set(currentOrder)
+
+    let table = tableData[currentOrder.tableId]
+
+    table.status = 'Còn trống'
+    table['lastOrderingId'] = ''
+
+    const ref = firebase.database().ref(employeeData.vid + '/tables').child(currentOrder.tableId)
+    ref.set(table)
+
+    const messageId = firebase.database().ref(getAdminData().vid + '/notifications/').push().key
+
+    firebase.database().ref(getAdminData().vid + '/notifications/').child(messageId).set({
+      id: messageId,
+      message: table.name + ': Xác nhận đã hoàn tất thanh toán',
+      type: 'waiter',
+      orderingId: orderingId,
+      tableId: currentOrder.tableId,
+      requiredDeleteFood: 'no',
+      read: 'no'
+    })
+
+    showNotification('topCenter', 'success', 'Cập nhập trạng thái thành công')
 
     dispatch(fetchOrderings())
   }
