@@ -28,9 +28,8 @@ class SideBar extends Component {
   }
 
   render() {
-    const { admin, foodCategory } = this.props
+    const { admin } = this.props
     const { activeLink, signedIn } = admin
-    const { items } = foodCategory
 
     if (signedIn) {
       return (
@@ -45,24 +44,8 @@ class SideBar extends Component {
               <li className={activeLink === 'map-tables' ? 'active' : ''}>
                 <Link to='map-tables'>
                   <i className='material-icons'>map</i>
-                  <p>Sơ đồ nhà hàng</p>
+                  <p>Sơ đồ bàn ăn</p>
                 </Link>
-              </li>
-              <li className={activeLink === 'order-food' ? 'active' : ''}>
-                <Link to='#' onClick={e => { e.preventDefault(); this.reloadMenu() }}>
-                  <i className="material-icons">list</i>
-                  <p>Quản lí thực đơn</p>
-                </Link>
-                <ul className='sub-menu'>
-                  {items.map((item, index) =>
-                    <li className={this.isActive(index)} key={index}>
-                      <Link to='#' onClick={e => { e.preventDefault(); this.changePage(index) }}>
-                      <i className="material-icons">local_dining</i>
-                      <span>{item.name}</span>
-                      </Link>
-                    </li>
-                  )}
-                </ul>
               </li>
             </ul>
           </div>
@@ -75,8 +58,7 @@ class SideBar extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  admin: state.admin,
-  foodCategory: state.foodCategory
+  admin: state.admin
 })
 
 export default connect(mapStateToProps)(SideBar)

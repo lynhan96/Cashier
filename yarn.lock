@@ -4714,6 +4714,10 @@ react-transition-group@^1.2.1:
     prop-types "^15.5.6"
     warning "^3.0.0"
 
+react-web-notification@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/react-web-notification/-/react-web-notification-0.3.1.tgz#f4fa8557a79548ccda7d831ab84c0ff9ba2597cf"
+
 react@^15.4.2:
   version "15.5.4"
   resolved "https://registry.yarnpkg.com/react/-/react-15.5.4.tgz#fa83eb01506ab237cdc1c8c3b1cea8de012bf047"

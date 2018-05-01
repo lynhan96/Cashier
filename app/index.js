@@ -11,9 +11,7 @@ import ForgotPassword from 'pages/ForgotPassword'
 
 import MapTable from 'components/admin/maps/MapTable'
 
-import Foods from 'pages/Foods'
 import TableOrderDetail from 'pages/TableOrderDetail'
-import Search from 'pages/Search'
 
 ReactDOM.render((
   <Provider store={Store}>
@@ -22,10 +20,7 @@ ReactDOM.render((
         <IndexRoute component={Login} />
         <Route path='login' component={Login}/>
         <Route path='forgot-password' component={ForgotPassword}/>
-        <Route path='foods' component={Foods} />
         <Route path='tabe-order-detail' component={TableOrderDetail} />
-        <Route path='search' component={Search} />
-
         <Route path='map-tables' component={MapTable} />
       </Route>
     </Router>

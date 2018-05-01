@@ -13,7 +13,7 @@ export const submitLogin =
     const { email, password } = values
     let admin = null
 
-    const url = 'kitchenLogin'
+    const url = 'cashierLogin'
     const params = { email: email, password: password }
 
     return request(makeRequestOptions(params, url)).then(body => {
@@ -73,78 +73,3 @@ export const submitForgotPassword =
       }
     })
   }
-
-// export const submitOrder =
-//   (values, dispatch, props) => {
-//     const foods = getFoodState().items
-//     const selectedFoods = getSelectedState().items
-//     const employeeData = getAdminData()
-//     const tableData = getTableState().items
-//     const orderingData = getOrderingState().items
-//     let items = getOrderItems(selectedFoods, foods)
-//     let table = tableData[values.tableId]
-//     let orderId = ''
-//     let message = ''
-
-//     if (items.length === 0) {
-//       return showNotification('topCenter', 'info', 'Vui lòng chọn món ăn!')
-//     }
-
-//     if (values.type === 'newOrder') {
-//       if (tableData[values.tableId].status === 'Đã có khách' || tableData[values.tableId].status === 'Đã đặt') {
-//         return showNotification('topCenter', 'error', 'Bàn đã có khách vui lòng chọn bàn khác!')
-//       }
-
-//       orderId = firebase.database().ref(employeeData.vid + '/orders/').push().key
-//       message = 'Đặt món thành công!'
-//     } else {
-//       if (tableData[values.tableId].status !== 'Đã có khách' && tableData[values.tableId].status !== 'Đã đặt') {
-//         return showNotification('topCenter', 'error', 'Vui lòng chọn bàn đã có khách để thêm món ăn vào bàn đó!')
-//       }
-
-//       orderId = table.lastOrderingId
-//       const currentOrder = orderingData[orderId]
-//       if (currentOrder.items) {
-//         items = R.concat(currentOrder.items, items)
-//       }
-
-//       message = 'Thêm món ăn thành công!'
-//     }
-
-//     const totalPrice = R.pipe(
-//       R.values,
-//       R.map(item => item.currentPrice * item.quantity),
-//       R.sum
-//     )(items)
-
-//     const order = {
-//       createdAt: moment.utc().format('YYYY-MM-DD hh-mm-ss'),
-//       updatedAt: moment.utc().format('YYYY-MM-DD hh-mm-ss'),
-//       transactionId: 'BILL.' + moment.utc().format('YYYY.MM.DD.hh.mm.ss'),
-//       status: 'Đang gọi món',
-//       totalPrice: totalPrice,
-//       items: items,
-//       userName: '',
-//       userId: '',
-//       tableId: values.tableId,
-//       employeeName: employeeData.name,
-//       employeeToken: employeeData.token,
-//       id: orderId
-//     }
-
-//     firebase.database().ref(employeeData.vid + '/orders/').child(orderId).set(order)
-
-//     table.status = 'Đã có khách'
-//     table['lastOrderingId'] = orderId
-
-//     const ref = firebase.database().ref(employeeData.vid + '/tables').child(values.tableId)
-//     ref.set(table)
-
-//     dispatch(updateSelectedFood({}))
-//     dispatch(fetchOrderings())
-//     dispatch(changeOrderModal(false))
-
-//     showNotification('topCenter', 'success', message)
-
-//     Navigator.push('tabe-order-detail?tableId=' + values.tableId)
-//   }

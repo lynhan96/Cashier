@@ -13,11 +13,11 @@ export const fetchNotificationSuccess = items => ({
 export const fetchNotifications = () => (dispatch) => {
   const ref = firebase.database().ref(getAdminData().vid + '/notifications/')
 
-  ref.orderByChild('type').equalTo('kitchen').on('value', (result) => {
+  ref.orderByChild('type').equalTo('cashier').on('value', (result) => {
     dispatch(fetchNotificationSuccess(result.val()))
   })
 
-  ref.orderByChild('type').equalTo('kitchen').on('child_added', (result) => {
+  ref.orderByChild('type').equalTo('cashier').on('child_added', (result) => {
     const notifications = getNotificationState().items
 
     if (result.val() !== null && !notifications[result.val().id]) {
