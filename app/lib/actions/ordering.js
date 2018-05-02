@@ -121,6 +121,8 @@ export const changeOrderStatus = (orderingId, newStatus) => {
     let currentOrder = R.find(R.propEq('id', orderingId))(orderingData)
 
     currentOrder.status = newStatus
+    currentOrder['cashierName'] = employeeData.name
+    currentOrder['cashierToken'] = employeeData.token
 
     firebase.database().ref(employeeData.vid + '/orders/').child(orderingId).set(currentOrder)
 

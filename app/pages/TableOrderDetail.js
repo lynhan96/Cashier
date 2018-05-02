@@ -66,7 +66,7 @@ class TableOrderDetail extends ReactQueryParams {
               <div className='card-content'style={{ width: '100%', float: 'left', padding: '40px 20px' }}>
                 <div className='row'>
                   <div className='col-md-12'>
-                    <h4 style={style.textHeader}>{'Ngày tạo hóa đơn: ' + ordering.createdAt}</h4>
+                    <h4 style={style.textHeader}>{'Mã hóa đơn: ' + ordering.transactionId}</h4>
                   </div>
                   <div className='col-sm-4'>
                     Nhân viên phục vụ:

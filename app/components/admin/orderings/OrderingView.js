@@ -70,6 +70,10 @@ class OrderingView extends ReactQueryParams {
                     Nhân viên phục vụ:
                     <strong style={{marginLeft: '10px'}}>{ordering.employeeName ? ordering.employeeName : ''}</strong><br/>
                   </div>
+                  <div className='col-sm-4'>
+                    Nhân viên xuất hóa đơn:
+                    <strong style={{marginLeft: '10px'}}>{ordering.cashierName ? ordering.cashierName : ''}</strong><br/>
+                  </div>
                   <div className='col-xs-12 table-responsive' style={{marginTop: '20px'}}>
                     <table className='table table-striped'>
                       <thead>

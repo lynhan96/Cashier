@@ -4,7 +4,7 @@ import moment from 'moment'
 
 import Navigator from 'lib/Navigator'
 import { showConfirmAlertDeleteItem } from '../../../../lib/actions/showNotification'
-
+import { priceToString } from 'lib/objects'
 import { isAdmin } from 'components/wrappers/isAdmin'
 
 const goto = (url) => () => Navigator.push(url)
@@ -21,6 +21,10 @@ class TableBody extends Component {
               {tableHeader.map(function(headerItem, headerIndex) {
                 if (headerItem.fieldName === 'isView' && item[headerItem.fieldName] === true) {
                   return <td key={headerIndex}>Có</td>
+                }
+
+                if (headerItem.fieldName === 'totalPrice') {
+                  return <td key={headerIndex}>{priceToString(item[headerItem.fieldName])}</td>
                 }
 
                 if (headerItem.fieldName === 'imageUrl') {
