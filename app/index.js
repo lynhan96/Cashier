@@ -19,6 +19,7 @@ import OrderingView from 'components/admin/orderings/OrderingView'
 import BookingList from 'components/admin/bookings/BookingList'
 import BookingView from 'components/admin/bookings/BookingView'
 import BookingCreate from 'components/admin/bookings/BookingCreate'
+import BookingEdit from 'components/admin/bookings/BookingEdit'
 
 ReactDOM.render((
   <Provider store={Store}>
@@ -36,6 +37,7 @@ ReactDOM.render((
         <Route path='bookings' component={BookingList} />
         <Route path='booking-view' component={BookingView} />
         <Route path='booking-create' component={BookingCreate} />
+        <Route path='booking-edit' component={BookingEdit} />
       </Route>
     </Router>
   </Provider>

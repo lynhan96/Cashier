@@ -15,27 +15,32 @@ export const FETCH_BOOKING_TOTAL_PAGE = 'FETCH_BOOKING_TOTAL_PAGE'
 
 export const tableHeader = () => ([
   { 'fieldName': 'id', 'viewTitle': 'ID' },
-  { 'fieldName': 'name', 'viewTitle': 'Tên' },
+  { 'fieldName': 'name', 'viewTitle': 'Khách hàng' },
   { 'fieldName': 'people', 'viewTitle': 'Số người' },
   { 'fieldName': 'time', 'viewTitle': 'Thời gian' },
   { 'fieldName': 'status', 'viewTitle': 'Trạng thái' }
 ])
 
 export const viewLabelHeader = () => ([
-  { 'fieldName': 'name', 'viewTitle': 'Tên' },
+  { 'fieldName': 'name', 'viewTitle': 'Khách hàng' },
   { 'fieldName': 'status', 'viewTitle': 'Trạng thái' },
   { 'fieldName': 'time', 'viewTitle': 'Ngày đặt' },
   { 'fieldName': 'createdAt', 'viewTitle': 'Ngày tạo' },
-  { 'fieldName': 'description', 'viewTitle': 'Ghi chú' }
+  { 'fieldName': 'note', 'viewTitle': 'Ghi chú' }
 ])
 
 export const editFieldInfo = () => ([
-  { 'fieldName': 'name', 'viewTitle': 'Tên', isRequired: true, type: 'text' },
+  { 'fieldName': 'name', 'viewTitle': 'Khách hàng', isRequired: true, type: 'text' },
+  { 'fieldName': 'status', 'viewTitle': 'Trạng thái', isRequired: true, type: 'select' },
   { 'fieldName': 'phoneNumber', 'viewTitle': 'Số điện thoại', isRequired: true, type: 'text' },
   { 'fieldName': 'people', 'viewTitle': 'Số người', isRequired: true, type: 'number' },
   { 'fieldName': 'time', 'viewTitle': 'Thời gian', type: 'datetime', isRequired: true },
-  { 'fieldName': 'description', 'viewTitle': 'Ghi chú', isRequired: true, type: 'textarea' }
+  { 'fieldName': 'note', 'viewTitle': 'Ghi chú', isRequired: true, type: 'textarea' }
 ])
+
+export const selectFieldData = () => ({
+  'status': ['Đang chờ xác nhận', 'Hoàn thành', 'Hủy lịch']
+})
 
 export const fetchBookingsBegin = () => ({
   type: FETCH_BOOKING_BEGIN
@@ -101,6 +106,38 @@ export const fetchBookings = params => {
     .catch(err => dispatch(fetchBookingsError(err)))
   }
 }
+
+export const editBooking =
+  (values, dispatch, props) => {
+    const url = 'updateBooking'
+    const itemData = props.items[props.itemIndex]
+
+    const params = R.merge({ bookingId: itemData.id })(values)
+
+    return request(makeRequestOptions(params, url)).then(body => {
+      if (body.code === 0) {
+        props.items[props.itemIndex] = R.merge(itemData)(values)
+        dispatch(fetchBookingsSuccess(props.items))
+
+        showNotification('topRight', 'success', 'Cập nhập dữ liệu thành công')
+      } else if (body.code === 417) {
+        showNotification('topRight', 'error', 'Dữ liệu không tồn tại')
+      } else if (body.code === 401 || body.code === 400) {
+        showNotification('topRight', 'error', 'Quá trình xác thực xảy ra lỗi!')
+      } else {
+        showNotification('topRight', 'error', 'Quá trình cập nhập dữ liệu xảy ra lỗi')
+      }
+    })
+    .catch(function (err) {
+      if (err.message) {
+        showNotification('topRight', 'error', err.message)
+        throw new SubmissionError({ _error: err.message })
+      } else {
+        showNotification('topRight', 'error', JSON.stringify(err))
+        throw new SubmissionError({ _error: JSON.stringify(err) })
+      }
+    })
+  }
 
 const createItem = (params, url, dispatch, props) => {
   return new Promise((resolve) => {

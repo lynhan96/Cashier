@@ -36,7 +36,7 @@ class BookingList extends ReactQueryParams {
                 itemState={bookingState}
                 tableHeader={tableHeader()}
                 viewHeader='Danh sách Lịch hẹn'
-                arrLink={{ create: 'booking-create', edit: 'booking-edit', view: 'booking-view', list: 'bookings' }}
+                arrLink={{ create: 'booking-create', edit: 'booking-edit', view: 'booking-view', list: 'bookings', delete: true }}
                 deleteItem={deleteBooking}
                 dispatch={dispatch}
                 sortByKey={sortByKey}

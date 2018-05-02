@@ -56,7 +56,7 @@ class SideBar extends Component {
               <li className={activeLink === 'bookings' ? 'active' : ''}>
                 <Link to='bookings'>
                   <i className='material-icons'>today</i>
-                  <p>Lịch hẹn</p>
+                  <p>Lịch đặt bàn</p>
                 </Link>
               </li>
             </ul>

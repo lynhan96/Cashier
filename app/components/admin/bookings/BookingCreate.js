@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 
 import ContentLoading from 'components/ContentLoading'
 import { isAdmin } from 'components/wrappers/isAdmin'
-import { createBooking, editFieldInfo } from 'lib/actions/booking'
+import { createBooking, editFieldInfo, selectFieldData } from 'lib/actions/booking'
 import TableCreateItem from 'components/admin/table/TableCreateItem'
 
 class BookingCreate extends Component {
@@ -24,6 +24,7 @@ class BookingCreate extends Component {
         <div className='container-fluid animated fadeIn'>
           <TableCreateItem
             editFieldInfo={editFieldInfo()}
+            selectFieldData={selectFieldData()}
             editHeader='Thêm Lịch hẹn'
             subHeader=''
             submitCreate={createBooking}
