@@ -2,7 +2,8 @@ import {
   FETCH_ORDERING_BEGIN,
   FETCH_ORDERING_SUCCESS,
   FETCH_ORDERING_ERROR,
-  ORDERING_CHANGED
+  FETCH_ORDERING_SORT_VALUE,
+  FETCH_ORDERING_TOTAL_PAGE
 } from '../lib/actions/ordering'
 
 import { ADMIN_SIGNED_OUT } from 'ducks/admin'
@@ -10,7 +11,10 @@ import { ADMIN_SIGNED_OUT } from 'ducks/admin'
 const initialState = {
   items: [],
   loading: false,
-  error: null
+  error: null,
+  totalPage: 0,
+  sortBy: 'id',
+  sortType: 'AtoZ'
 }
 
 const reducer = (state = initialState, action) => {
@@ -37,17 +41,18 @@ const reducer = (state = initialState, action) => {
         items: []
       }
 
-    case ORDERING_CHANGED: {
-      const { id } = action.item
-
+    case FETCH_ORDERING_SORT_VALUE:
       return {
         ...state,
-        items: {
-          ...state.items,
-          [id]: action.item
-        }
+        sortBy: action.sortBy,
+        sortType: action.sortType
       }
-    }
+
+    case FETCH_ORDERING_TOTAL_PAGE:
+      return {
+        ...state,
+        totalPage: action.totalPage
+      }
 
     case ADMIN_SIGNED_OUT:
       return {...initialState}

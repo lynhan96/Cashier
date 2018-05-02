@@ -47,6 +47,12 @@ class SideBar extends Component {
                   <p>Sơ đồ bàn ăn</p>
                 </Link>
               </li>
+              <li className={activeLink === 'orderings' ? 'active' : ''}>
+                <Link to='orderings'>
+                  <i className='material-icons'>shopping_cart</i>
+                  <p>Hóa đơn</p>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
