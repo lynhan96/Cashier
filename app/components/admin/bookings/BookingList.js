@@ -4,24 +4,19 @@ import ReactQueryParams from 'react-query-params'
 import { connect } from 'react-redux'
 
 import { isAdmin } from 'components/wrappers/isAdmin'
-import { tableHeader, fetchOrderings, deleteOrdering, sortByKey, searchByKeyword, changePagination } from 'lib/actions/ordering'
+import { tableHeader, fetchBookings, deleteBooking, sortByKey, searchByKeyword, changePagination } from 'lib/actions/booking'
 import TableListing from 'components/admin/table/TableListing'
 import { updateActiveLink } from 'ducks/admin'
 import ContentLoading from 'components/ContentLoading'
 
-class FoodList extends ReactQueryParams {
+class BookingList extends ReactQueryParams {
   componentDidMount() {
-    this.props.dispatch(fetchOrderings())
-    this.props.dispatch(updateActiveLink('orderings'))
+    this.props.dispatch(fetchBookings())
+    this.props.dispatch(updateActiveLink('bookings'))
   }
 
   render() {
-    const { error, dispatch } = this.props
-    let { orderingState } = this.props
-
-    if (orderingState.items) {
-      orderingState.items = R.values(orderingState.items)
-    }
+    const { bookingState, error, dispatch } = this.props
 
     if (error) {
       return (
@@ -38,15 +33,14 @@ class FoodList extends ReactQueryParams {
           <div className='row'>
             <div className='col-md-12'>
               <TableListing
-                itemState={orderingState}
+                itemState={bookingState}
                 tableHeader={tableHeader()}
-                viewHeader='Danh sách Hóa đơn'
-                arrLink={{ view: 'ordering-view', list: 'orderings' }}
-                deleteItem={deleteOrdering}
+                viewHeader='Danh sách Lịch hẹn'
+                arrLink={{ create: 'booking-create', edit: 'booking-edit', view: 'booking-view', list: 'bookings' }}
+                deleteItem={deleteBooking}
                 dispatch={dispatch}
                 sortByKey={sortByKey}
                 searchFunc={searchByKeyword}
-                visableCreateButton={true}
                 error={error}
                 changePagination={changePagination}
               />
@@ -59,10 +53,10 @@ class FoodList extends ReactQueryParams {
 }
 
 const mapStateToProps = state => ({
-  orderingState: state.ordering
+  bookingState: state.booking
 })
 
 export default R.pipe(
   connect(mapStateToProps),
   isAdmin
-)(FoodList)
+)(BookingList)

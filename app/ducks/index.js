@@ -6,6 +6,7 @@ import food from 'ducks/food'
 import zone from 'ducks/zone'
 import table from 'ducks/table'
 import ordering from 'ducks/ordering'
+import booking from 'ducks/booking'
 import webBrowserNotification from 'ducks/webBrowserNotification'
 
 export default {
@@ -17,5 +18,6 @@ export default {
   table,
   ordering,
   webBrowserNotification,
+  booking,
   notification
 }

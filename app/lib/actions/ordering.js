@@ -15,7 +15,6 @@ export const tableHeader = () => ([
   { 'fieldName': 'id', 'viewTitle': 'ID' },
   { 'fieldName': 'transactionId', 'viewTitle': 'Mã hóa đơn' },
   { 'fieldName': 'status', 'viewTitle': 'Trạng thái' },
-  { 'fieldName': 'userName', 'viewTitle': 'Khách hàng' },
   { 'fieldName': 'totalPrice', 'viewTitle': 'Tổng tiền' },
   { 'fieldName': 'createdAt', 'viewTitle': 'Thời gian' }
 ])
@@ -119,7 +118,7 @@ export const changeOrderStatus = (orderingId, newStatus) => {
     const employeeData = getAdminData()
     const orderingData = getOrderingState().items
     const tableData = getTableState().items
-    let currentOrder = orderingData[orderingId]
+    let currentOrder = R.find(R.propEq('id', orderingId))(orderingData)
 
     currentOrder.status = newStatus
 

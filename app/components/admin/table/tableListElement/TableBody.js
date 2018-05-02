@@ -56,9 +56,12 @@ class TableBody extends Component {
                   </button>
                 }
 
-                <button onClick={showConfirmAlertDeleteItem(deleteItem, item.id, dispatch, itemIndex, 'list')}type='button' rel='tooltip' title='Xóa dữ liệu' className='btn btn-danger btn-simple btn-xs'>
-                  <i className='material-icons'>close</i>
-                </button>
+                {
+                  arrLink.delete &&
+                  <button onClick={showConfirmAlertDeleteItem(deleteItem, item.id, dispatch, itemIndex, 'list')}type='button' rel='tooltip' title='Xóa dữ liệu' className='btn btn-danger btn-simple btn-xs'>
+                    <i className='material-icons'>close</i>
+                  </button>
+                }
               </td>
             </tr>
           )

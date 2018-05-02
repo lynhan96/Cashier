@@ -53,6 +53,12 @@ class SideBar extends Component {
                   <p>Hóa đơn</p>
                 </Link>
               </li>
+              <li className={activeLink === 'bookings' ? 'active' : ''}>
+                <Link to='bookings'>
+                  <i className='material-icons'>today</i>
+                  <p>Lịch hẹn</p>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

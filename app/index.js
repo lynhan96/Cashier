@@ -12,9 +12,13 @@ import ForgotPassword from 'pages/ForgotPassword'
 import MapTable from 'components/admin/maps/MapTable'
 
 import TableOrderDetail from 'pages/TableOrderDetail'
+
 import OrderingList from 'components/admin/orderings/OrderingList'
 import OrderingView from 'components/admin/orderings/OrderingView'
-import OrderingEdit from 'components/admin/orderings/OrderingEdit'
+
+import BookingList from 'components/admin/bookings/BookingList'
+import BookingView from 'components/admin/bookings/BookingView'
+import BookingCreate from 'components/admin/bookings/BookingCreate'
 
 ReactDOM.render((
   <Provider store={Store}>
@@ -28,7 +32,10 @@ ReactDOM.render((
 
         <Route path='orderings' component={OrderingList} />
         <Route path='ordering-view' component={OrderingView} />
-        <Route path='ordering-edit' component={OrderingEdit} />
+
+        <Route path='bookings' component={BookingList} />
+        <Route path='booking-view' component={BookingView} />
+        <Route path='booking-create' component={BookingCreate} />
       </Route>
     </Router>
   </Provider>

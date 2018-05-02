@@ -42,7 +42,7 @@ class TableOrderDetail extends ReactQueryParams {
     let ordering = null
 
     if (orderings) {
-      ordering = orderings[currentTable.lastOrderingId]
+      ordering = R.find(R.propEq('id', currentTable.lastOrderingId))(orderings)
 
       if (ordering && ordering.items) {
         items = ordering.items

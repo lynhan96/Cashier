@@ -4,19 +4,32 @@ import ReactQueryParams from 'react-query-params'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
 
-import ErrorMessage from 'components/ErrorMessage'
+import { priceToString } from 'lib/objects'
 import ContentLoading from 'components/ContentLoading'
 import { isAdmin } from 'components/wrappers/isAdmin'
-import { showConfirmAlertDeleteItem } from 'lib/actions/showNotification'
-import { deleteOrdering } from 'lib/actions/ordering'
+import OrderingNotFound from 'components/OrderingNotFound'
 
 class OrderingView extends ReactQueryParams {
   render() {
-    const { error, loading, orderings, dispatch } = this.props
+    const { error, loading, orderings } = this.props
     const params = this.queryParams
-    const arrLink = { create: 'ordering-create', edit: 'ordering-edit', view: 'ordering-view', list: 'orderings' }
+    const arrLink = { list: 'orderings' }
     const itemIndex = params.index
-    const ordering = orderings[itemIndex]
+
+    let items = []
+    let ordering = null
+
+    if (orderings) {
+      ordering = orderings[itemIndex]
+
+      if (ordering.items) {
+        items = ordering.items
+      }
+    }
+
+    if (ordering == null || !ordering) {
+      return <OrderingNotFound/>
+    }
 
     if (error) {
       return (
@@ -37,99 +50,88 @@ class OrderingView extends ReactQueryParams {
     return (
       <div className='content'>
         <div className='container-fluid animated fadeIn'>
-          {error && <ErrorMessage text={error} />}
           <div className='row'>
-            <div className='col-md-2'></div>
-            <div className='col-md-8'>
-                <div className='card'>
-                  <div className='card-header' data-background-color='purple'>
-                    <h4 className='title'>Thông tin hóa đơn</h4>
+            <div className='card'>
+              <div className='card-header' data-background-color='purple'>
+                <h4 className='title' style={style.header}>{'Mã hóa đơn: ' + ordering.transactionId}</h4>
+                <h4 className='title' style={style.header}>{'Trạng thái: ' + ordering.status}</h4>
+              </div>
+              <div className='card-content'style={{ width: '100%', float: 'left', padding: '40px 20px' }}>
+                <div className='row'>
+                  <div className='col-md-12'>
+                    <Link to={arrLink.list} className='btn btn-success btn-round'>
+                      Trở lại
+                    </Link>
                   </div>
-                  <div className='card-content'>
-                    <div style={{ textAlign: 'center' }}>
-                      <Link to={arrLink.list} className='btn btn-success btn-round' style={style.buttonMargin}>
-                        Trở lại
-                      </Link>
-                      <Link to={arrLink.edit + '?index=' + itemIndex} className='btn btn-primary btn-round' style={style.buttonMargin}>
-                        Chỉnh sửa dữ liệu
-                      </Link>
-                      <button onClick={showConfirmAlertDeleteItem(deleteOrdering, ordering.id, dispatch, itemIndex, 'view')} type='button' className='btn btn-danger btn-round' style={style.buttonMargin}>
-                        Xóa dữ liệu
-                      </button>
-                    </div>
-                    <div className='row'>
-                      <h4 style={style.textHeader}>{'Ngày thanh toán: ' + ordering.createdAt }</h4>
-                      <h4 style={style.textHeader}>{'Trạng thái: ' + ordering.status }</h4>
-                      <div className='col-sm-4'>
-                        Nhân viên thanh toán:
-                        <address>
-                          <strong>Nguyễn Văn A</strong><br/>
-                        </address>
-                      </div>
-                      <div className='col-sm-4'>
-                        Khách hàng:
-                        <address>
-                          <strong>{ordering.userName}</strong><br/>
-                        </address>
-                      </div>
-                      <div className='col-xs-12 table-responsive'>
-                        <table className='table table-striped'>
-                          <thead>
-                            <tr>
-                              <th>Món ăn</th>
-                              <th>Số lưọng</th>
-                              <th>Trạng thái</th>
-                              <th>Gía tiền</th>
-                              <th>Thành tiền</th>
+                  <div className='col-md-12'>
+                    <h4 style={style.textHeader}>{'Ngày tạo hóa đơn: ' + ordering.createdAt}</h4>
+                  </div>
+                  <div className='col-sm-4'>
+                    Nhân viên phục vụ:
+                    <strong style={{marginLeft: '10px'}}>{ordering.employeeName ? ordering.employeeName : ''}</strong><br/>
+                  </div>
+                  <div className='col-xs-12 table-responsive' style={{marginTop: '20px'}}>
+                    <table className='table table-striped'>
+                      <thead>
+                        <tr>
+                          <th>Hình ảnh</th>
+                          <th>Món ăn</th>
+                          <th>Trạng thái</th>
+                          <th>Số lưọng</th>
+                          <th>Gía tiền</th>
+                          <th>Thành tiền</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {items.map((value, index) => {
+                          const image = R.values(value.imageUrl)
+
+                          return (
+                            <tr key={index}>
+                              <td>
+                                <img src={ image.length > 0 ? image[0] : '' } style={{ objectFit: 'contain', width: '70px', height: '70px' }}/>
+                              </td>
+                              <td>{value.name}</td>
+                              <td>{value.status}</td>
+                              <td>{value.quantity}</td>
+                              <td>{priceToString(value.currentPrice)}</td>
+                              <td>{priceToString(value.currentPrice * value.quantity)}</td>
                             </tr>
-                          </thead>
-                          <tbody>
-                            {ordering.items.map((value, index) => {
-                              return (
-                                <tr key={index}>
-                                  <td>{value.name}</td>
-                                  <td>{value.quantity}</td>
-                                  <td>{value.status}</td>
-                                  <td>{value.currentPrice + ' VNĐ'}</td>
-                                  <td>{value.currentPrice + ' VNĐ'}</td>
-                                </tr>
-                              )
-                            })}
-                          </tbody>
-                        </table>
-                      </div>
-                      <div className='col-xs-12'>
-                        <h4>{'Ngày xuất hóa đơn: ' + ordering.updatedAt}</h4>
-                        <div className='table-responsive'>
-                          <table className='table'>
-                            <tbody>
-                              <tr>
-                                <th>Phương thức thanh toán:</th>
-                                <td>Tiền mặt</td>
-                              </tr>
-                              <tr>
-                                <th>Tông tiền:</th>
-                                <td>{ordering.totalPrice + ' VNĐ'}</td>
-                              </tr>
-                              <tr>
-                                <th>Mã khuyễn mãi:</th>
-                                <td>0 VNĐ</td>
-                              </tr>
-                              <tr>
-                                <th>Thuế (0%)</th>
-                                <td>0 VNĐ</td>
-                              </tr>
-                              <tr>
-                                <th>Tổng tiền đã có VAT</th>
-                                <td>{ordering.totalPrice + ' VNĐ'}</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
+                          )
+                        })}
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className='col-xs-12'>
+                    <div className='table-responsive'>
+                      <table className='table'>
+                        <tbody>
+                          <tr>
+                            <th>Phương thức thanh toán:</th>
+                            <td style={{borderTop: '1px solid #ddd'}}>Tiền mặt</td>
+                          </tr>
+                          <tr>
+                            <th>Tông tiền:</th>
+                            <td>{priceToString(ordering.totalPrice)}</td>
+                          </tr>
+                          <tr>
+                            <th>Mã khuyễn mãi:</th>
+                            <td>0 VNĐ</td>
+                          </tr>
+                          <tr>
+                            <th>Thuế (0%)</th>
+                            <td>0 VNĐ</td>
+                          </tr>
+                          <tr>
+                            <th>Tổng tiền đã có VAT</th>
+                            <td>{priceToString(ordering.totalPrice)}</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -150,15 +152,44 @@ export default R.pipe(
 )(OrderingView)
 
 const style = {
-  buttonMargin: {
-    margin: '5px 15px 10px 15px'
+  name: {
+    textAlign: 'center',
+    fontWeight: 'bold'
   },
-  imageItem: {
-    width: '120px',
-    margin: '10px',
-    objectFit: 'contain'
+  quantity: {
+    userSelect: 'none'
   },
-  textHeader: {
-    padding: '0 15px'
+  header: {
+    textAlign: 'center',
+    fontSize: '25px'
+  },
+  description: {
+    textAlign: 'center',
+    fontSize: '20px'
+  },
+  status: {
+    textAlign: 'center',
+    fontSize: '20px',
+    backgroundColor: 'green',
+    color: 'white',
+    padding: '8px 20px',
+    borderRadius: '20px',
+    margin: '8px 0'
+  },
+  actionButton: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginTop: '30px'
+  },
+  deleteFood: {
+    float: 'left',
+    textAlign: 'center',
+    fontSize: '17px',
+    color: 'white',
+    padding: '8px 15px',
+    borderRadius: '5px',
+    margin: '8px 5px',
+    fontWeight: '500'
   }
 }
