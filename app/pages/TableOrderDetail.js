@@ -7,7 +7,7 @@ import Navigator from 'lib/Navigator'
 
 import { isAdmin } from 'components/wrappers/isAdmin'
 import { priceToString } from 'lib/objects'
-import { fetchOrderings, changeOrderStatus } from 'lib/actions/ordering'
+import { fetchOrderings, changeOrderStatus, sendResponse } from 'lib/actions/ordering'
 import { fetchNotifications } from 'lib/actions/notification'
 import OrderingNotFound from 'components/OrderingNotFound'
 
@@ -16,6 +16,11 @@ class TableOrderDetail extends ReactQueryParams {
     super(props)
 
     this.changeStatus = this.changeStatus.bind(this)
+    this.sendResponse = this.sendResponse.bind(this)
+  }
+
+  sendResponse(orderingID, newStatus) {
+    this.props.dispatch(sendResponse(orderingID, newStatus))
   }
 
   changeStatus(orderingID, newStatus) {
@@ -144,7 +149,7 @@ class TableOrderDetail extends ReactQueryParams {
                       to='#'
                       style={style.deleteFood}
                       onClick={e => { e.preventDefault() }}
-                    >Yêu cầu sửa đổi hóa đơn</Link>
+                    >Gửi yêu cầu sửa đổi thông tin</Link>
                     <Link
                       className='button-done-food'
                       to='#'
@@ -156,7 +161,13 @@ class TableOrderDetail extends ReactQueryParams {
                       to='#'
                       style={style.deleteFood}
                       onClick={e => { e.preventDefault(); this.changeStatus(ordering.id, 'Đã thanh toán') }}
-                    >Xác nhận hóa đơn đã thanh toán</Link>
+                    >Xác nhận đã thanh toán</Link>
+                    <Link
+                      className='button-confirm-food'
+                      to='#'
+                      style={style.deleteFood}
+                      onClick={e => { e.preventDefault(); this.sendResponse(ordering.id, 'Đã xuất hóa đơn') }}
+                    >Gửi thông báo đã xuất hóa đơn</Link>
                   </div>
                 </div>
               </div>

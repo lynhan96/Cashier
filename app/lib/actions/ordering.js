@@ -151,3 +151,39 @@ export const changeOrderStatus = (orderingId, newStatus) => {
     dispatch(fetchOrderings())
   }
 }
+
+export const sendResponse = (orderingId, newStatus) => {
+  return dispatch => {
+    const employeeData = getAdminData()
+    const orderingData = getOrderingState().items
+    const tableData = getTableState().items
+    let currentOrder = R.find(R.propEq('id', orderingId))(orderingData)
+
+    currentOrder.status = newStatus
+
+    firebase.database().ref(employeeData.vid + '/orders/').child(orderingId).set(currentOrder)
+
+    let table = tableData[currentOrder.tableId]
+
+    table.status = 'Đang chờ thanh toán'
+
+    const ref = firebase.database().ref(employeeData.vid + '/tables').child(currentOrder.tableId)
+    ref.set(table)
+
+    const messageId = firebase.database().ref(getAdminData().vid + '/notifications/').push().key
+
+    firebase.database().ref(getAdminData().vid + '/notifications/').child(messageId).set({
+      id: messageId,
+      message: table.name + ': Thu ngân đã xuất hóa đơn',
+      type: 'waiter',
+      orderingId: orderingId,
+      tableId: currentOrder.tableId,
+      requiredDeleteFood: 'no',
+      read: 'no'
+    })
+
+    showNotification('topCenter', 'success', 'Cập nhập trạng thái thành công')
+
+    dispatch(fetchOrderings())
+  }
+}
