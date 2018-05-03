@@ -42,7 +42,7 @@ class TableBody extends Component {
                 }
 
                 if (headerItem.fieldName === 'time') {
-                  item[headerItem.fieldName] = moment.utc(item[headerItem.fieldName]).add(7, 'hours').format('YYYY-MM-DD hh:mm')
+                  item[headerItem.fieldName] = moment(item[headerItem.fieldName]).format('YYYY-MM-DD HH:mm')
                 }
 
                 return <td key={headerIndex}>{item[headerItem.fieldName]}</td>

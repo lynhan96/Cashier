@@ -3,6 +3,7 @@ import { Field } from 'redux-form'
 
 import EditFormInputText from 'components/form/element/EditFormInputText'
 import InputDateTime from 'components/form/element/InputDateTime'
+import InputTime from 'components/form/element/InputTime'
 import SubmitButton from 'components/form/element/SubmitButton'
 import SelectField from 'components/form/element/SelectField'
 import CustomSelectField from 'components/form/element/CustomSelectField'
@@ -14,6 +15,8 @@ const checkFieldType = type => {
   switch (type) {
     case 'datetime':
       return InputDateTime
+    case 'timepicker':
+      return InputTime
     case 'select':
       return SelectField
     case 'customSelect':
@@ -48,6 +51,23 @@ const EditForm = (props) => {
                 defaultValue={data[item.fieldName]}
                 type={item.type}
                 fieldName={item.fieldName}
+              />
+            </div>
+          )
+        }
+
+        if (item.type === 'timepicker') {
+          return (
+            <div className='col-md-6' key={index}>
+              <Field
+                name='selectTime'
+                component={checkFieldType(item.type)}
+                customSelectFieldData={customSelectFieldData}
+                label={item.viewTitle}
+                required={item.isRequired}
+                defaultValue={data[item.fieldName]}
+                type={item.type}
+                fieldName='selectTime'
               />
             </div>
           )

@@ -39,9 +39,9 @@ class TableViewItem extends Component {
                     || item.fieldName === 'startDate'
                     || item.fieldName === 'endDate'
                     || item.fieldName === 'time') {
-                      data[item.fieldName] = moment.utc(data[item.fieldName]).add(7, 'hours').format('YYYY-MM-DD hh:mm:ss')
+                      data[item.fieldName] = moment(data[item.fieldName]).format('YYYY-MM-DD HH:mm')
                     } else if (item.fieldName === 'birthday') {
-                      data[item.fieldName] = moment.utc(data[item.fieldName]).add(7, 'hours').format('YYYY-MM-DD')
+                      data[item.fieldName] = moment(data[item.fieldName]).format('YYYY-MM-DD')
                     }
 
                     if (item.fieldName === 'imageUrl') {

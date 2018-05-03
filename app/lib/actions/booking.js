@@ -34,7 +34,8 @@ export const editFieldInfo = () => ([
   { 'fieldName': 'status', 'viewTitle': 'Trạng thái', isRequired: true, type: 'select' },
   { 'fieldName': 'phoneNumber', 'viewTitle': 'Số điện thoại', isRequired: true, type: 'text' },
   { 'fieldName': 'people', 'viewTitle': 'Số người', isRequired: true, type: 'number' },
-  { 'fieldName': 'time', 'viewTitle': 'Thời gian', type: 'datetime', isRequired: true },
+  { 'fieldName': 'time', 'viewTitle': 'Ngày', type: 'datetime', isRequired: true },
+  { 'fieldName': 'time', 'viewTitle': 'Giờ', type: 'timepicker', isRequired: false },
   { 'fieldName': 'note', 'viewTitle': 'Ghi chú', isRequired: true, type: 'textarea' }
 ])
 
@@ -112,7 +113,10 @@ export const editBooking =
     const url = 'updateBooking'
     const itemData = props.items[props.itemIndex]
 
-    const params = R.merge({ bookingId: itemData.id })(values)
+    const time = moment(values.time).format('YYYY-MM-DD') + ' ' + moment(values.selectTime).format('H:mm:ss')
+
+    let params = R.merge({ bookingId: itemData.id })(values)
+    params.time = moment(time)
 
     return request(makeRequestOptions(params, url)).then(body => {
       if (body.code === 0) {
