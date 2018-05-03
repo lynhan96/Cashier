@@ -7,6 +7,7 @@ import zone from 'ducks/zone'
 import table from 'ducks/table'
 import ordering from 'ducks/ordering'
 import booking from 'ducks/booking'
+import modal from 'ducks/modal'
 import webBrowserNotification from 'ducks/webBrowserNotification'
 
 export default {
@@ -19,5 +20,6 @@ export default {
   ordering,
   webBrowserNotification,
   booking,
+  modal,
   notification
 }

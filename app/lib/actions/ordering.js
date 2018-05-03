@@ -4,6 +4,7 @@ import { getAdminData, getOrderingState, getTableState } from 'lib/Constant'
 import * as firebase from 'firebase'
 import { showNotification } from './showNotification'
 import { sortObjectsByKeyAtoZ, sortObjectsByKeyZtoA } from 'lib/objects'
+import { changeOrderModal } from 'ducks/modal'
 
 export const FETCH_ORDERING_BEGIN = 'FETCH_ORDERING_BEGIN'
 export const FETCH_ORDERING_SUCCESS = 'FETCH_ORDERING_SUCCESS'
@@ -187,3 +188,26 @@ export const sendResponse = (orderingId, newStatus) => {
     dispatch(fetchOrderings())
   }
 }
+
+export const sendEditRequest =
+  (values, dispatch, props) => {
+    const orderingData = getOrderingState().items
+    const employeeData = getAdminData()
+    const tableData = getTableState().items
+    let currentOrder = R.find(R.propEq('id', values.orderingId))(orderingData)
+
+    const messageId = firebase.database().ref(getAdminData().vid + '/notifications/').push().key
+
+    firebase.database().ref(getAdminData().vid + '/notifications/').child(messageId).set({
+      id: messageId,
+      message:  employeeData.name + ': ' + values.message,
+      type: 'admin',
+      orderingId: values.orderingId,
+      tableId: currentOrder.tableId,
+      requiredDeleteFood: 'no',
+      read: 'no'
+    })
+
+    dispatch(changeOrderModal(false))
+    showNotification('topCenter', 'success', 'Gửi yêu cầu thành công')
+  }
