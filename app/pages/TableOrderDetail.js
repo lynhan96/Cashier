@@ -8,7 +8,6 @@ import Navigator from 'lib/Navigator'
 import { isAdmin } from 'components/wrappers/isAdmin'
 import { priceToString } from 'lib/objects'
 import { fetchOrderings, changeOrderStatus, sendResponse } from 'lib/actions/ordering'
-import { fetchNotifications } from 'lib/actions/notification'
 import OrderingNotFound from 'components/OrderingNotFound'
 import EditRequestModal from 'components/EditRequestModal'
 import { changeOrderModal } from 'ducks/modal'
@@ -22,7 +21,7 @@ class TableOrderDetail extends ReactQueryParams {
     this.openEditRequestModal = this.openEditRequestModal.bind(this)
   }
 
-  openEditRequestModal(){
+  openEditRequestModal() {
     this.props.dispatch(changeOrderModal(true))
   }
 
@@ -37,7 +36,6 @@ class TableOrderDetail extends ReactQueryParams {
   }
 
   componentDidMount() {
-    this.props.dispatch(fetchNotifications())
     this.props.dispatch(fetchOrderings())
   }
 
