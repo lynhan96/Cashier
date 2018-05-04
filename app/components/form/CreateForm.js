@@ -55,6 +55,23 @@ const CreateForm = (props) => {
           )
         }
 
+        if (item.type === 'timepicker') {
+          return (
+            <div className='col-md-6' key={index}>
+              <Field
+                name='selectTime'
+                component={checkFieldType(item.type)}
+                selectFieldData={selectFieldData}
+                customSelectFieldData={customSelectFieldData}
+                label={item.viewTitle}
+                required={item.isRequired}
+                type={item.type}
+                fieldName='selectTime'
+              />
+            </div>
+          )
+        }
+
         return (
           <div className='col-md-6' key={index}>
             <Field

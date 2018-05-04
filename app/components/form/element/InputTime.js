@@ -1,5 +1,4 @@
 import React from 'react'
-import moment from 'moment'
 import TimePicker from 'material-ui/TimePicker'
 // We receive props from ReduxForm's Field
 // and turn them into props for Bootstrap forms
