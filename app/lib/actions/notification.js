@@ -1,6 +1,6 @@
 import * as firebase from 'firebase'
 import { getAdminData, getNotificationState } from 'lib/Constant'
-import R from 'ramda'
+
 import { viewWebBrowserNotification } from 'ducks/webBrowserNotification'
 
 export const FETCH_NOTIFICATION_SUCCESS = 'FETCH_NOTIFICATION_SUCCESS'
@@ -14,7 +14,7 @@ export const fetchNotificationSuccess = items => ({
 export const fetchNotifications = () => (dispatch) => {
   const ref = firebase.database().ref(getAdminData().vid + '/notifications/')
 
-  ref.orderByChild('type').equalTo('cashier').on('value', (result) => {
+  ref.orderByChild('type').equalTo('cashier').once('value', (result) => {
     dispatch(fetchNotificationSuccess(result.val()))
   })
 
@@ -32,7 +32,9 @@ export const fetchNotifications = () => (dispatch) => {
         sound: 'sound/sound.mp3'
       }
 
-      const items = R.merge(getNotificationState().items)(result.val())
+      let items = getNotificationState().items
+      items[result.val().id] = result.val()
+
       dispatch(fetchNotificationSuccess(items))
 
       dispatch(viewWebBrowserNotification(title, options))
