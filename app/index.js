@@ -15,6 +15,7 @@ import TableOrderDetail from 'pages/TableOrderDetail'
 
 import OrderingList from 'components/admin/orderings/OrderingList'
 import OrderingView from 'components/admin/orderings/OrderingView'
+import PrintOrder from 'components/admin/orderings/PrintOrder'
 
 import BookingList from 'components/admin/bookings/BookingList'
 import BookingView from 'components/admin/bookings/BookingView'
@@ -38,6 +39,7 @@ ReactDOM.render((
         <Route path='booking-view' component={BookingView} />
         <Route path='booking-create' component={BookingCreate} />
         <Route path='booking-edit' component={BookingEdit} />
+        <Route path='print-order' component={PrintOrder} />
       </Route>
     </Router>
   </Provider>

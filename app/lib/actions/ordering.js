@@ -200,7 +200,7 @@ export const sendEditRequest =
 
     firebase.database().ref(getAdminData().vid + '/notifications/').child(messageId).set({
       id: messageId,
-      message:  employeeData.name + ': ' + values.message,
+      message: employeeData.name + ': ' + values.message,
       type: 'admin',
       orderingId: values.orderingId,
       tableId: currentOrder.tableId,

@@ -143,36 +143,43 @@ class TableOrderDetail extends ReactQueryParams {
                     </div>
                   </div>
                   <div className='col-xs-12' style={style.actionButton}>
-                    <Link
-                      className='button-delete-food'
-                      to='#'
-                      style={style.deleteFood}
-                      onClick={e => { e.preventDefault() }}
-                    >Nhập mã khuyến mãi</Link>
+                    {ordering.status === 'Đã xuất hóa đơn' ? '' :
+                      <Link
+                        className='button-delete-food'
+                        to='#'
+                        style={style.deleteFood}
+                        onClick={e => { e.preventDefault() }}
+                      >Nhập mã khuyến mãi</Link>
+                    }
                     <Link
                       className='button-confirm-food'
                       to='#'
                       style={style.deleteFood}
                       onClick={e => { e.preventDefault(); this.openEditRequestModal() }}
                     >Gửi yêu cầu sửa đổi thông tin</Link>
-                    <Link
-                      className='button-done-food'
-                      to='#'
-                      style={style.deleteFood}
-                      onClick={e => { e.preventDefault() }}
-                    >Xuất hóa đơn</Link>
-                    <Link
-                      className='button-confirm-food'
-                      to='#'
-                      style={style.deleteFood}
-                      onClick={e => { e.preventDefault(); this.changeStatus(ordering.id, 'Đã thanh toán') }}
-                    >Xác nhận đã thanh toán</Link>
-                    <Link
-                      className='button-confirm-food'
-                      to='#'
-                      style={style.deleteFood}
-                      onClick={e => { e.preventDefault(); this.sendResponse(ordering.id, 'Đã xuất hóa đơn') }}
-                    >Gửi thông báo đã xuất hóa đơn</Link>
+                    {ordering.status === 'Đã xuất hóa đơn' ? '' :
+                      <Link
+                        className='button-done-food'
+                        to={'/print-order?tableId=' + params.tableId}
+                        style={style.deleteFood}
+                      >Xuất hóa đơn</Link>
+                    }
+                    {ordering.status === 'Đã xuất hóa đơn' ? '' :
+                      <Link
+                        className='button-confirm-food'
+                        to='#'
+                        style={style.deleteFood}
+                        onClick={e => { e.preventDefault(); this.changeStatus(ordering.id, 'Đã thanh toán') }}
+                      >Xác nhận đã thanh toán</Link>
+                    }
+                    {ordering.status === 'Đã xuất hóa đơn' ? '' :
+                      <Link
+                        className='button-confirm-food'
+                        to='#'
+                        style={style.deleteFood}
+                        onClick={e => { e.preventDefault(); this.sendResponse(ordering.id, 'Đã xuất hóa đơn') }}
+                      >Gửi thông báo đã xuất hóa đơn</Link>
+                    }
                   </div>
                   <EditRequestModal
                     orderingId={ordering.id}

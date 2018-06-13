@@ -9,6 +9,7 @@ import '../public/lib/cms/css/animate.css'
 import '../public/lib/cms/css/hover.min.css'
 import '../public/lib/cms/css/custom.css'
 import 'styles/website.less'
+import 'styles/print.less'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import WebBrowserNotification from 'components/WebBrowserNotification'
@@ -16,6 +17,7 @@ import WebBrowserNotification from 'components/WebBrowserNotification'
 import { fetchNotifications } from 'lib/actions/notification'
 import { fetchTables } from 'lib/actions/table'
 import { fetchZones } from 'lib/actions/zone'
+import { getAdminData } from 'lib/Constant'
 
 const ZoomInAndOut = ({ children, position, ...props }) => (
   <Transition
@@ -34,6 +36,10 @@ const ZoomInAndOut = ({ children, position, ...props }) => (
 class App extends Component {
   componentWillUpdate() {
     if (this.props.signedIn) {
+      if (getAdminData() == null) {
+        return
+      }
+
       this.props.dispatch(fetchNotifications())
       this.props.dispatch(fetchTables())
       this.props.dispatch(fetchZones())
