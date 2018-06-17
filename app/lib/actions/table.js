@@ -75,6 +75,10 @@ export const submitUpdateTable =
   }
 
 export const fetchTables = () => (dispatch) => {
+  if (getAdminData() == null) {
+    return
+  }
+
   const ref = database.ref(getAdminData().vid + '/tables')
   ref.once('value')
     .then((snapshot) => {

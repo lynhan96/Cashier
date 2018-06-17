@@ -3,4 +3,4 @@ webpack -p --config webpack.prod.config.js --define process.env.NODE_ENV='\"prod
 cd public
 git add .
 git commit --amend -m "update"
-git push origin staging -f
+git push pro staging -f

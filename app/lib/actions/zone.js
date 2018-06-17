@@ -1,11 +1,6 @@
 import { database } from 'database/database'
 import R from 'ramda'
-import async from 'async'
-import * as firebase from 'firebase'
-
-import Navigator from 'lib/Navigator'
 import { getAdminData } from 'lib/Constant'
-import { showNotification } from './showNotification'
 
 export const FETCH_ZONE_SUCCESS = 'FETCH_ZONE_SUCCESS'
 export const ZONE_CHANGED = 'ZONE_CHANGED'
@@ -22,6 +17,10 @@ export const fetchZoneSuccess = items => ({
 })
 
 export const fetchZones = () => (dispatch) => {
+  if (getAdminData() == null) {
+    return
+  }
+
   const ref = database.ref(getAdminData().vid + '/zones')
   ref.once('value')
     .then((snapshot) => {
