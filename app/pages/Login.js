@@ -30,7 +30,7 @@ class Login extends Component {
         <div className='col-md-4'>
           <div className='card' style={style.cardBackground}>
             <div className='card-header' style={style.cardHeaderBackground}>
-              <h2 className='card-title' style={style.cardTitle}> BK Food CMS</h2>
+              <h2 className='card-title' style={style.cardTitle}>Nhân viên thu ngân</h2>
             </div>
             <div className='card-body' style={{ padding: '0 30px' }}>
               <DecoratedLoginForm />
