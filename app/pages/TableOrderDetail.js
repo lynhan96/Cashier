@@ -143,7 +143,7 @@ class TableOrderDetail extends ReactQueryParams {
                     </div>
                   </div>
                   <div className='col-xs-12' style={style.actionButton}>
-                    {ordering.status === 'Đã xuất hóa đơn' ? '' :
+                    {ordering.status === 'Đã thanh toán' ? '' :
                       <Link
                         className='button-delete-food'
                         to='#'
@@ -157,14 +157,14 @@ class TableOrderDetail extends ReactQueryParams {
                       style={style.deleteFood}
                       onClick={e => { e.preventDefault(); this.openEditRequestModal() }}
                     >Gửi yêu cầu sửa đổi thông tin</Link>
-                    {ordering.status === 'Đã xuất hóa đơn' ? '' :
+                    {ordering.status === 'Đã thanh toán' ? '' :
                       <Link
                         className='button-done-food'
                         to={'/print-order?tableId=' + params.tableId}
                         style={style.deleteFood}
                       >Xuất hóa đơn</Link>
                     }
-                    {ordering.status === 'Đã xuất hóa đơn' ? '' :
+                    {ordering.status === 'Đã thanh toán' ? '' :
                       <Link
                         className='button-confirm-food'
                         to='#'
@@ -172,7 +172,7 @@ class TableOrderDetail extends ReactQueryParams {
                         onClick={e => { e.preventDefault(); this.changeStatus(ordering.id, 'Đã thanh toán') }}
                       >Xác nhận đã thanh toán</Link>
                     }
-                    {ordering.status === 'Đã xuất hóa đơn' ? '' :
+                    {ordering.status === 'Đã thanh toán' ? '' :
                       <Link
                         className='button-confirm-food'
                         to='#'

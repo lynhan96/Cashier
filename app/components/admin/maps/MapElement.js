@@ -27,6 +27,7 @@ class MapElement extends Component {
         handle='.handle'
         bounds='parent'
         defaultPosition={{x: item.x, y: item.y}}
+        position={{x: item.x, y: item.y}}
         grid={[5, 5]}>
         <div className='table handle'>
           <div style={{ backgroundImage: 'url("' + imageUrl + '")', backgroundSize: 'cover' }} className='table-wrapper'>
