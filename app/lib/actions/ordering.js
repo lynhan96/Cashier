@@ -183,8 +183,6 @@ export const sendResponse = (orderingId, newStatus) => {
       read: 'no'
     })
 
-    showNotification('topCenter', 'success', 'Cập nhập trạng thái thành công')
-
     dispatch(fetchOrderings())
   }
 }

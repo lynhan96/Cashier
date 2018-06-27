@@ -11,6 +11,7 @@ import { fetchOrderings, changeOrderStatus, sendResponse } from 'lib/actions/ord
 import OrderingNotFound from 'components/OrderingNotFound'
 import EditRequestModal from 'components/EditRequestModal'
 import { changeOrderModal } from 'ducks/modal'
+import { fetchNotifications } from 'lib/actions/notification'
 
 class TableOrderDetail extends ReactQueryParams {
   constructor (props) {
@@ -36,6 +37,7 @@ class TableOrderDetail extends ReactQueryParams {
   }
 
   componentDidMount() {
+    this.props.dispatch(fetchNotifications())
     this.props.dispatch(fetchOrderings())
   }
 
@@ -161,6 +163,7 @@ class TableOrderDetail extends ReactQueryParams {
                       <Link
                         className='button-done-food'
                         to={'/print-order?tableId=' + params.tableId}
+                        onClick={e => { this.sendResponse(ordering.id, 'Đã xuất hóa đơn') }}
                         style={style.deleteFood}
                       >Xuất hóa đơn</Link>
                     }
@@ -172,14 +175,7 @@ class TableOrderDetail extends ReactQueryParams {
                         onClick={e => { e.preventDefault(); this.changeStatus(ordering.id, 'Đã thanh toán') }}
                       >Xác nhận đã thanh toán</Link>
                     }
-                    {ordering.status === 'Đã thanh toán' ? '' :
-                      <Link
-                        className='button-confirm-food'
-                        to='#'
-                        style={style.deleteFood}
-                        onClick={e => { e.preventDefault(); this.sendResponse(ordering.id, 'Đã xuất hóa đơn') }}
-                      >Gửi thông báo đã xuất hóa đơn</Link>
-                    }
+
                   </div>
                   <EditRequestModal
                     orderingId={ordering.id}
