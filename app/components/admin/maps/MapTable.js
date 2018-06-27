@@ -8,9 +8,11 @@ import { isAdmin } from 'components/wrappers/isAdmin'
 import { updateActiveLink } from 'ducks/admin'
 import ContentLoading from 'components/ContentLoading'
 import MapElement from 'components/admin/maps/MapElement'
+import { fetchNotifications } from 'lib/actions/notification'
 
 class MapTable extends Component {
   componentDidMount() {
+    this.props.dispatch(fetchNotifications())
     this.props.dispatch(updateActiveLink('map-tables'))
   }
 
